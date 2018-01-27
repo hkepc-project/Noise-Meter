@@ -2348,4 +2348,6 @@ F 3 "" H 4050 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4050 5950
+Text Label 4400 5650 0    60   ~ 0
+Vrms
 $EndSCHEMATC
