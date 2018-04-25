@@ -1,11 +1,11 @@
 Version 3.2 HI-TECH Software Intermediate Code
 "97 mcc_generated_files/mcc.h
 [v _PMD_Initialize `(v ~T0 @X0 0 ef ]
-"238 mcc_generated_files/pin_manager.h
+"258 mcc_generated_files/pin_manager.h
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
 "84 mcc_generated_files/mcc.h
 [v _OSCILLATOR_Initialize `(v ~T0 @X0 0 ef ]
-"132 mcc_generated_files/adcc.h
+"133 mcc_generated_files/adcc.h
 [v _ADCC_Initialize `(v ~T0 @X0 0 ef ]
 "92 mcc_generated_files/fvr.h
 [v _FVR_Initialize `(v ~T0 @X0 0 ef ]
@@ -11290,8 +11290,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
-[; ;pin_manager.h: 238: void PIN_MANAGER_Initialize (void);
-[; ;pin_manager.h: 250: void PIN_MANAGER_IOC(void);
+[; ;pin_manager.h: 258: void PIN_MANAGER_Initialize (void);
+[; ;pin_manager.h: 270: void PIN_MANAGER_IOC(void);
 [; ;stdint.h: 13: typedef signed char int8_t;
 [; ;stdint.h: 20: typedef signed int int16_t;
 [; ;stdint.h: 28: typedef signed short long int int24_t;
@@ -11322,46 +11322,47 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 215: typedef uint16_t uintptr_t;
 [; ;stdbool.h: 12: typedef unsigned char bool;
 [; ;interrupt_manager.h: 108: void interrupt INTERRUPT_InterruptManager(void);
+[; ;fvr.h: 92: void FVR_Initialize(void);
+[; ;fvr.h: 126: bool FVR_IsOutputReady(void);
 [; ;adcc.h: 71: typedef uint16_t adc_result_t;
 [; ;adcc.h: 88: typedef enum
 [; ;adcc.h: 89: {
-[; ;adcc.h: 90: channel_VBAT_div_3 = 0x39,
-[; ;adcc.h: 91: channel_VLCD3_div_4 = 0x3A,
-[; ;adcc.h: 92: channel_Vss = 0x3B,
-[; ;adcc.h: 93: channel_Temp_Sensor = 0x3C,
-[; ;adcc.h: 94: channel_DAC1_Output = 0x3D,
-[; ;adcc.h: 95: channel_FVR_Buffer1 = 0x3E,
-[; ;adcc.h: 96: channel_FVR_Buffer2 = 0x3F
-[; ;adcc.h: 97: } adcc_channel_t;
-[; ;adcc.h: 132: void ADCC_Initialize(void);
-[; ;adcc.h: 161: void ADCC_StartConversion(adcc_channel_t channel);
-[; ;adcc.h: 192: bool ADCC_IsConversionDone();
-[; ;adcc.h: 223: adc_result_t ADCC_GetConversionResult(void);
-[; ;adcc.h: 254: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
-[; ;adcc.h: 279: void ADCC_StopConversion(void);
-[; ;adcc.h: 303: void ADCC_SetStopOnInterrupt(void);
-[; ;adcc.h: 325: void ADCC_DischargeSampleCapacitor(void);
-[; ;adcc.h: 349: void ADCC_LoadAcquisitionRegister(uint16_t);
-[; ;adcc.h: 372: void ADCC_SetPrechargeTime(uint16_t);
-[; ;adcc.h: 396: void ADCC_SetRepeatCount(uint8_t);
-[; ;adcc.h: 420: uint8_t ADCC_GetCurrentCountofConversions(void);
-[; ;adcc.h: 444: void ADCC_ClearAccumulator(void);
-[; ;adcc.h: 467: int24_t ADCC_GetAccumulatorValue(void);
-[; ;adcc.h: 491: bool ADCC_HasAccumulatorOverflowed(void);
-[; ;adcc.h: 515: uint16_t ADCC_GetFilterValue(void);
-[; ;adcc.h: 539: uint16_t ADCC_GetPreviousResult(void);
-[; ;adcc.h: 563: void ADCC_DefineSetPoint(uint16_t);
-[; ;adcc.h: 588: void ADCC_SetUpperThreshold(uint16_t);
-[; ;adcc.h: 613: void ADCC_SetLowerThreshold(uint16_t);
-[; ;adcc.h: 636: uint16_t ADCC_GetErrorCalculation(void);
-[; ;adcc.h: 658: void ADCC_EnableDoubleSampling(void);
-[; ;adcc.h: 680: void ADCC_EnableContinuousConversion(void);
-[; ;adcc.h: 702: void ADCC_DisableContinuousConversion(void);
-[; ;adcc.h: 724: bool ADCC_HasErrorCrossedUpperThreshold(void);
-[; ;adcc.h: 746: bool ADCC_HasErrorCrossedLowerThreshold(void);
-[; ;adcc.h: 768: uint8_t ADCC_GetConversionStageStatus(void);
-[; ;fvr.h: 92: void FVR_Initialize(void);
-[; ;fvr.h: 126: bool FVR_IsOutputReady(void);
+[; ;adcc.h: 90: channel_ANA6 = 0x6,
+[; ;adcc.h: 91: channel_VBAT_div_3 = 0x39,
+[; ;adcc.h: 92: channel_VLCD3_div_4 = 0x3A,
+[; ;adcc.h: 93: channel_Vss = 0x3B,
+[; ;adcc.h: 94: channel_Temp_Sensor = 0x3C,
+[; ;adcc.h: 95: channel_DAC1_Output = 0x3D,
+[; ;adcc.h: 96: channel_FVR_Buffer1 = 0x3E,
+[; ;adcc.h: 97: channel_FVR_Buffer2 = 0x3F
+[; ;adcc.h: 98: } adcc_channel_t;
+[; ;adcc.h: 133: void ADCC_Initialize(void);
+[; ;adcc.h: 162: void ADCC_StartConversion(adcc_channel_t channel);
+[; ;adcc.h: 193: bool ADCC_IsConversionDone();
+[; ;adcc.h: 224: adc_result_t ADCC_GetConversionResult(void);
+[; ;adcc.h: 255: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
+[; ;adcc.h: 280: void ADCC_StopConversion(void);
+[; ;adcc.h: 304: void ADCC_SetStopOnInterrupt(void);
+[; ;adcc.h: 326: void ADCC_DischargeSampleCapacitor(void);
+[; ;adcc.h: 350: void ADCC_LoadAcquisitionRegister(uint16_t);
+[; ;adcc.h: 373: void ADCC_SetPrechargeTime(uint16_t);
+[; ;adcc.h: 397: void ADCC_SetRepeatCount(uint8_t);
+[; ;adcc.h: 421: uint8_t ADCC_GetCurrentCountofConversions(void);
+[; ;adcc.h: 445: void ADCC_ClearAccumulator(void);
+[; ;adcc.h: 468: int24_t ADCC_GetAccumulatorValue(void);
+[; ;adcc.h: 492: bool ADCC_HasAccumulatorOverflowed(void);
+[; ;adcc.h: 516: uint16_t ADCC_GetFilterValue(void);
+[; ;adcc.h: 540: uint16_t ADCC_GetPreviousResult(void);
+[; ;adcc.h: 564: void ADCC_DefineSetPoint(uint16_t);
+[; ;adcc.h: 589: void ADCC_SetUpperThreshold(uint16_t);
+[; ;adcc.h: 614: void ADCC_SetLowerThreshold(uint16_t);
+[; ;adcc.h: 637: uint16_t ADCC_GetErrorCalculation(void);
+[; ;adcc.h: 659: void ADCC_EnableDoubleSampling(void);
+[; ;adcc.h: 681: void ADCC_EnableContinuousConversion(void);
+[; ;adcc.h: 703: void ADCC_DisableContinuousConversion(void);
+[; ;adcc.h: 725: bool ADCC_HasErrorCrossedUpperThreshold(void);
+[; ;adcc.h: 747: bool ADCC_HasErrorCrossedLowerThreshold(void);
+[; ;adcc.h: 769: uint8_t ADCC_GetConversionStageStatus(void);
 [; ;tmr0.h: 99: void TMR0_Initialize(void);
 [; ;tmr0.h: 128: void TMR0_StartTimer(void);
 [; ;tmr0.h: 160: void TMR0_StopTimer(void);

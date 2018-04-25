@@ -7,13 +7,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S49 . . ]
 "958
 [v _LATCbits `VS49 ~T0 @X0 0 e@26 ]
-"43 Nokia_5110.h
+"44 Nokia_5110.h
 [v _nokia_delay `(v ~T0 @X0 0 ef1`i ]
-"34
-[v _nokia_write_command `(v ~T0 @X0 0 ef1`uc ]
 "35
-[v _nokia_write_data `(v ~T0 @X0 0 ef1`uc ]
+[v _nokia_write_command `(v ~T0 @X0 0 ef1`uc ]
 "36
+[v _nokia_write_data `(v ~T0 @X0 0 ef1`uc ]
+"37
 [v _nokia_write_dorc `(v ~T0 @X0 0 ef1`uc ]
 [v F12554 `(v ~T0 @X0 1 tf1`ul ]
 "153 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic.h
@@ -11267,8 +11267,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
-[; ;pin_manager.h: 238: void PIN_MANAGER_Initialize (void);
-[; ;pin_manager.h: 250: void PIN_MANAGER_IOC(void);
+[; ;pin_manager.h: 258: void PIN_MANAGER_Initialize (void);
+[; ;pin_manager.h: 270: void PIN_MANAGER_IOC(void);
 [; ;stdint.h: 13: typedef signed char int8_t;
 [; ;stdint.h: 20: typedef signed int int16_t;
 [; ;stdint.h: 28: typedef signed short long int int24_t;
@@ -11299,46 +11299,47 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 215: typedef uint16_t uintptr_t;
 [; ;stdbool.h: 12: typedef unsigned char bool;
 [; ;interrupt_manager.h: 108: void interrupt INTERRUPT_InterruptManager(void);
+[; ;fvr.h: 92: void FVR_Initialize(void);
+[; ;fvr.h: 126: bool FVR_IsOutputReady(void);
 [; ;adcc.h: 71: typedef uint16_t adc_result_t;
 [; ;adcc.h: 88: typedef enum
 [; ;adcc.h: 89: {
-[; ;adcc.h: 90: channel_VBAT_div_3 = 0x39,
-[; ;adcc.h: 91: channel_VLCD3_div_4 = 0x3A,
-[; ;adcc.h: 92: channel_Vss = 0x3B,
-[; ;adcc.h: 93: channel_Temp_Sensor = 0x3C,
-[; ;adcc.h: 94: channel_DAC1_Output = 0x3D,
-[; ;adcc.h: 95: channel_FVR_Buffer1 = 0x3E,
-[; ;adcc.h: 96: channel_FVR_Buffer2 = 0x3F
-[; ;adcc.h: 97: } adcc_channel_t;
-[; ;adcc.h: 132: void ADCC_Initialize(void);
-[; ;adcc.h: 161: void ADCC_StartConversion(adcc_channel_t channel);
-[; ;adcc.h: 192: bool ADCC_IsConversionDone();
-[; ;adcc.h: 223: adc_result_t ADCC_GetConversionResult(void);
-[; ;adcc.h: 254: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
-[; ;adcc.h: 279: void ADCC_StopConversion(void);
-[; ;adcc.h: 303: void ADCC_SetStopOnInterrupt(void);
-[; ;adcc.h: 325: void ADCC_DischargeSampleCapacitor(void);
-[; ;adcc.h: 349: void ADCC_LoadAcquisitionRegister(uint16_t);
-[; ;adcc.h: 372: void ADCC_SetPrechargeTime(uint16_t);
-[; ;adcc.h: 396: void ADCC_SetRepeatCount(uint8_t);
-[; ;adcc.h: 420: uint8_t ADCC_GetCurrentCountofConversions(void);
-[; ;adcc.h: 444: void ADCC_ClearAccumulator(void);
-[; ;adcc.h: 467: int24_t ADCC_GetAccumulatorValue(void);
-[; ;adcc.h: 491: bool ADCC_HasAccumulatorOverflowed(void);
-[; ;adcc.h: 515: uint16_t ADCC_GetFilterValue(void);
-[; ;adcc.h: 539: uint16_t ADCC_GetPreviousResult(void);
-[; ;adcc.h: 563: void ADCC_DefineSetPoint(uint16_t);
-[; ;adcc.h: 588: void ADCC_SetUpperThreshold(uint16_t);
-[; ;adcc.h: 613: void ADCC_SetLowerThreshold(uint16_t);
-[; ;adcc.h: 636: uint16_t ADCC_GetErrorCalculation(void);
-[; ;adcc.h: 658: void ADCC_EnableDoubleSampling(void);
-[; ;adcc.h: 680: void ADCC_EnableContinuousConversion(void);
-[; ;adcc.h: 702: void ADCC_DisableContinuousConversion(void);
-[; ;adcc.h: 724: bool ADCC_HasErrorCrossedUpperThreshold(void);
-[; ;adcc.h: 746: bool ADCC_HasErrorCrossedLowerThreshold(void);
-[; ;adcc.h: 768: uint8_t ADCC_GetConversionStageStatus(void);
-[; ;fvr.h: 92: void FVR_Initialize(void);
-[; ;fvr.h: 126: bool FVR_IsOutputReady(void);
+[; ;adcc.h: 90: channel_ANA6 = 0x6,
+[; ;adcc.h: 91: channel_VBAT_div_3 = 0x39,
+[; ;adcc.h: 92: channel_VLCD3_div_4 = 0x3A,
+[; ;adcc.h: 93: channel_Vss = 0x3B,
+[; ;adcc.h: 94: channel_Temp_Sensor = 0x3C,
+[; ;adcc.h: 95: channel_DAC1_Output = 0x3D,
+[; ;adcc.h: 96: channel_FVR_Buffer1 = 0x3E,
+[; ;adcc.h: 97: channel_FVR_Buffer2 = 0x3F
+[; ;adcc.h: 98: } adcc_channel_t;
+[; ;adcc.h: 133: void ADCC_Initialize(void);
+[; ;adcc.h: 162: void ADCC_StartConversion(adcc_channel_t channel);
+[; ;adcc.h: 193: bool ADCC_IsConversionDone();
+[; ;adcc.h: 224: adc_result_t ADCC_GetConversionResult(void);
+[; ;adcc.h: 255: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
+[; ;adcc.h: 280: void ADCC_StopConversion(void);
+[; ;adcc.h: 304: void ADCC_SetStopOnInterrupt(void);
+[; ;adcc.h: 326: void ADCC_DischargeSampleCapacitor(void);
+[; ;adcc.h: 350: void ADCC_LoadAcquisitionRegister(uint16_t);
+[; ;adcc.h: 373: void ADCC_SetPrechargeTime(uint16_t);
+[; ;adcc.h: 397: void ADCC_SetRepeatCount(uint8_t);
+[; ;adcc.h: 421: uint8_t ADCC_GetCurrentCountofConversions(void);
+[; ;adcc.h: 445: void ADCC_ClearAccumulator(void);
+[; ;adcc.h: 468: int24_t ADCC_GetAccumulatorValue(void);
+[; ;adcc.h: 492: bool ADCC_HasAccumulatorOverflowed(void);
+[; ;adcc.h: 516: uint16_t ADCC_GetFilterValue(void);
+[; ;adcc.h: 540: uint16_t ADCC_GetPreviousResult(void);
+[; ;adcc.h: 564: void ADCC_DefineSetPoint(uint16_t);
+[; ;adcc.h: 589: void ADCC_SetUpperThreshold(uint16_t);
+[; ;adcc.h: 614: void ADCC_SetLowerThreshold(uint16_t);
+[; ;adcc.h: 637: uint16_t ADCC_GetErrorCalculation(void);
+[; ;adcc.h: 659: void ADCC_EnableDoubleSampling(void);
+[; ;adcc.h: 681: void ADCC_EnableContinuousConversion(void);
+[; ;adcc.h: 703: void ADCC_DisableContinuousConversion(void);
+[; ;adcc.h: 725: bool ADCC_HasErrorCrossedUpperThreshold(void);
+[; ;adcc.h: 747: bool ADCC_HasErrorCrossedLowerThreshold(void);
+[; ;adcc.h: 769: uint8_t ADCC_GetConversionStageStatus(void);
 [; ;tmr0.h: 99: void TMR0_Initialize(void);
 [; ;tmr0.h: 128: void TMR0_StartTimer(void);
 [; ;tmr0.h: 160: void TMR0_StopTimer(void);
@@ -11354,19 +11355,20 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mcc.h: 97: void PMD_Initialize(void);
 [; ;Nokia_5110.h: 32: void nokia_init(void);
 [; ;Nokia_5110.h: 33: void nokia_refresh(void);
-[; ;Nokia_5110.h: 34: void nokia_write_command(unsigned char);
-[; ;Nokia_5110.h: 35: void nokia_write_data(unsigned char);
-[; ;Nokia_5110.h: 36: void nokia_write_dorc(unsigned char);
-[; ;Nokia_5110.h: 37: void nokia_clean_buffer(void);
-[; ;Nokia_5110.h: 38: void nokia_clean_line(unsigned char);
-[; ;Nokia_5110.h: 39: void nokia_contrast(unsigned char);
-[; ;Nokia_5110.h: 40: void nokia_gotoxy(char, char);
-[; ;Nokia_5110.h: 41: void nokia_printchar(char);
-[; ;Nokia_5110.h: 42: void nokia_printstr(char*);
-[; ;Nokia_5110.h: 43: void nokia_delay(int);
-[v F12719 `uc ~T0 @X0 -> 6 `i t ]
+[; ;Nokia_5110.h: 34: void nokia_refresh_line(unsigned char);
+[; ;Nokia_5110.h: 35: void nokia_write_command(unsigned char);
+[; ;Nokia_5110.h: 36: void nokia_write_data(unsigned char);
+[; ;Nokia_5110.h: 37: void nokia_write_dorc(unsigned char);
+[; ;Nokia_5110.h: 38: void nokia_clean_buffer(void);
+[; ;Nokia_5110.h: 39: void nokia_clean_line(unsigned char);
+[; ;Nokia_5110.h: 40: void nokia_contrast(unsigned char);
+[; ;Nokia_5110.h: 41: void nokia_gotoxy(char, char);
+[; ;Nokia_5110.h: 42: void nokia_printchar(char);
+[; ;Nokia_5110.h: 43: void nokia_printstr(char*);
+[; ;Nokia_5110.h: 44: void nokia_delay(int);
+[v F12722 `uc ~T0 @X0 -> 6 `i t ]
 "53 Nokia_5110.c
-[v _buffer `F12719 ~T0 @X0 -> 84 `i s ]
+[v _buffer `F12722 ~T0 @X0 -> 84 `i s ]
 [; ;Nokia_5110.c: 53: static unsigned char buffer[84][6];
 "54
 [v _idx `uc ~T0 @X0 1 s ]
@@ -11803,6 +11805,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 8 `i `uc
 -> -> 16 `i `uc
 -> -> 32 `i `uc
+"119
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 0 `i `uc
 "120
 -> -> 4 `i `uc
 -> -> 2 `i `uc
@@ -12023,6 +12031,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Nokia_5110.c: 116: 0x61,0x51,0x49,0x45,0x43,
 [; ;Nokia_5110.c: 117: 0x00,0x7f,0x41,0x41,0x00,
 [; ;Nokia_5110.c: 118: 0x02,0x04,0x08,0x10,0x20,
+[; ;Nokia_5110.c: 119: 0x00,0x41,0x41,0x7f,0x00,
 [; ;Nokia_5110.c: 120: 0x04,0x02,0x01,0x02,0x04,
 [; ;Nokia_5110.c: 121: 0x40,0x40,0x40,0x40,0x40,
 [; ;Nokia_5110.c: 122: 0x00,0x01,0x02,0x04,0x00,
@@ -12057,9 +12066,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Nokia_5110.c: 151: 0x00,0x41,0x36,0x08,0x00,
 [; ;Nokia_5110.c: 152: 0x10,0x08,0x08,0x10,0x08,
 [; ;Nokia_5110.c: 153: 0x78,0x46,0x41,0x46,0x78};
-[v F12725 `Cuc ~T0 @X0 -> 20 `i t ]
+[v F12728 `Cuc ~T0 @X0 -> 20 `i t ]
 "154
-[v _Font10x12 `F12725 ~T0 @X0 -> 13 `i e ]
+[v _Font10x12 `F12728 ~T0 @X0 -> 13 `i e ]
 [i _Font10x12
 :U ..
 :U ..
@@ -12564,9 +12573,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $U 1309  ]
 [e :U 1308 ]
 {
-[; ;Nokia_5110.c: 314: buffer[i][y]=0x00;
+[; ;Nokia_5110.c: 314: buffer[i][y%6]=0x00;
 "314
-[e = *U + &U *U + &U _buffer * -> _i `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux * -> _y `ux -> -> # *U &U *U + &U _buffer * -> _i `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux `ui `ux -> -> 0 `i `uc ]
+[e = *U + &U *U + &U _buffer * -> _i `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux * -> -> % -> _y `i -> 6 `i `ui `ux -> -> # *U &U *U + &U _buffer * -> _i `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux `ui `ux -> -> 0 `i `uc ]
 "315
 }
 "313
@@ -12638,477 +12647,517 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :UE 1311 ]
 }
 "331
-[v _nokia_write_command `(v ~T0 @X0 1 ef1`uc ]
-"332
+[v _nokia_refresh_line `(v ~T0 @X0 1 ef1`uc ]
 {
-[; ;Nokia_5110.c: 331: void nokia_write_command(unsigned char comando)
-[; ;Nokia_5110.c: 332: {
-[e :U _nokia_write_command ]
-"331
-[v _comando `uc ~T0 @X0 1 r1 ]
-"332
+[; ;Nokia_5110.c: 331: void nokia_refresh_line(unsigned char y) {
+[e :U _nokia_refresh_line ]
+[v _y `uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;Nokia_5110.c: 333: do { LATCbits.LATC2 = 0; } while(0);
+"332
+[v _x `uc ~T0 @X0 1 a ]
+[; ;Nokia_5110.c: 332: char x;
+[; ;Nokia_5110.c: 333: nokia_write_command(0x40 + y%6);
 "333
-[e :U 1321 ]
+[e ( _nokia_write_command (1 -> + -> 64 `i % -> _y `i -> 6 `i `uc ]
+[; ;Nokia_5110.c: 334: nokia_write_command(0x80);
+"334
+[e ( _nokia_write_command (1 -> -> 128 `i `uc ]
+[; ;Nokia_5110.c: 335: for(x=0;x<84;x++){
+"335
+{
+[e = _x -> -> 0 `i `uc ]
+[e $ < -> _x `i -> 84 `i 1319  ]
+[e $U 1320  ]
+[e :U 1319 ]
+{
+[; ;Nokia_5110.c: 336: nokia_write_data(buffer[x][y%6]);
+"336
+[e ( _nokia_write_data (1 *U + &U *U + &U _buffer * -> _x `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux * -> -> % -> _y `i -> 6 `i `ui `ux -> -> # *U &U *U + &U _buffer * -> _x `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux `ui `ux ]
+"337
+}
+"335
+[e ++ _x -> -> 1 `i `uc ]
+[e $ < -> _x `i -> 84 `i 1319  ]
+[e :U 1320 ]
+"337
+}
+[; ;Nokia_5110.c: 337: }
+[; ;Nokia_5110.c: 338: }
+"338
+[e :UE 1318 ]
+}
+"341
+[v _nokia_write_command `(v ~T0 @X0 1 ef1`uc ]
+"342
+{
+[; ;Nokia_5110.c: 341: void nokia_write_command(unsigned char comando)
+[; ;Nokia_5110.c: 342: {
+[e :U _nokia_write_command ]
+"341
+[v _comando `uc ~T0 @X0 1 r1 ]
+"342
+[f ]
+[; ;Nokia_5110.c: 343: do { LATCbits.LATC2 = 0; } while(0);
+"343
+[e :U 1325 ]
 {
 [e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
 }
-[e :U 1320 ]
-[; ;Nokia_5110.c: 336: do { LATCbits.LATC1 = 0; } while(0);
-"336
 [e :U 1324 ]
+[; ;Nokia_5110.c: 346: do { LATCbits.LATC1 = 0; } while(0);
+"346
+[e :U 1328 ]
 {
 [e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
 }
-[e :U 1323 ]
-[; ;Nokia_5110.c: 339: nokia_write_dorc(comando);
-"339
-[e ( _nokia_write_dorc (1 _comando ]
-[; ;Nokia_5110.c: 340: do { LATCbits.LATC1 = 1; } while(0);
-"340
 [e :U 1327 ]
+[; ;Nokia_5110.c: 349: nokia_write_dorc(comando);
+"349
+[e ( _nokia_write_dorc (1 _comando ]
+[; ;Nokia_5110.c: 350: do { LATCbits.LATC1 = 1; } while(0);
+"350
+[e :U 1331 ]
 {
 [e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 1326 ]
-[; ;Nokia_5110.c: 343: do { LATCbits.LATC3 = 1; } while(0);
-"343
 [e :U 1330 ]
+[; ;Nokia_5110.c: 353: do { LATCbits.LATC3 = 1; } while(0);
+"353
+[e :U 1334 ]
 {
 [e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 1329 ]
-[; ;Nokia_5110.c: 351: }
-"351
-[e :UE 1318 ]
+[e :U 1333 ]
+[; ;Nokia_5110.c: 361: }
+"361
+[e :UE 1322 ]
 }
-"354
+"364
 [v _nokia_write_data `(v ~T0 @X0 1 ef1`uc ]
-"355
+"365
 {
-[; ;Nokia_5110.c: 354: void nokia_write_data(unsigned char dato)
-[; ;Nokia_5110.c: 355: {
+[; ;Nokia_5110.c: 364: void nokia_write_data(unsigned char dato)
+[; ;Nokia_5110.c: 365: {
 [e :U _nokia_write_data ]
-"354
+"364
 [v _dato `uc ~T0 @X0 1 r1 ]
-"355
+"365
 [f ]
-[; ;Nokia_5110.c: 356: do { LATCbits.LATC2 = 1; } while(0);
-"356
-[e :U 1334 ]
+[; ;Nokia_5110.c: 366: do { LATCbits.LATC2 = 1; } while(0);
+"366
+[e :U 1338 ]
 {
 [e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
 }
-[e :U 1333 ]
-[; ;Nokia_5110.c: 359: do { LATCbits.LATC1 = 0; } while(0);
-"359
 [e :U 1337 ]
+[; ;Nokia_5110.c: 369: do { LATCbits.LATC1 = 0; } while(0);
+"369
+[e :U 1341 ]
 {
 [e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
 }
-[e :U 1336 ]
-[; ;Nokia_5110.c: 361: nokia_write_dorc(dato);
-"361
-[e ( _nokia_write_dorc (1 _dato ]
-[; ;Nokia_5110.c: 363: do { LATCbits.LATC1 = 1; } while(0);
-"363
 [e :U 1340 ]
+[; ;Nokia_5110.c: 371: nokia_write_dorc(dato);
+"371
+[e ( _nokia_write_dorc (1 _dato ]
+[; ;Nokia_5110.c: 373: do { LATCbits.LATC1 = 1; } while(0);
+"373
+[e :U 1344 ]
 {
 [e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 1339 ]
-[; ;Nokia_5110.c: 366: do { LATCbits.LATC3 = 1; } while(0);
-"366
 [e :U 1343 ]
+[; ;Nokia_5110.c: 376: do { LATCbits.LATC3 = 1; } while(0);
+"376
+[e :U 1347 ]
 {
 [e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 1342 ]
-[; ;Nokia_5110.c: 375: }
-"375
-[e :UE 1331 ]
+[e :U 1346 ]
+[; ;Nokia_5110.c: 385: }
+"385
+[e :UE 1335 ]
 }
-"378
+"388
 [v _nokia_write_dorc `(v ~T0 @X0 1 ef1`uc ]
-"379
+"389
 {
-[; ;Nokia_5110.c: 378: void nokia_write_dorc(unsigned char n_dato)
-[; ;Nokia_5110.c: 379: {
+[; ;Nokia_5110.c: 388: void nokia_write_dorc(unsigned char n_dato)
+[; ;Nokia_5110.c: 389: {
 [e :U _nokia_write_dorc ]
-"378
+"388
 [v _n_dato `uc ~T0 @X0 1 r1 ]
-"379
+"389
 [f ]
-"381
+"391
 [v _caa `uc ~T0 @X0 1 a ]
-"382
+"392
 [v _data `uc ~T0 @X0 1 a ]
-[; ;Nokia_5110.c: 381: char caa;
-[; ;Nokia_5110.c: 382: unsigned char data;
-[; ;Nokia_5110.c: 383: data=n_dato;
-"383
+[; ;Nokia_5110.c: 391: char caa;
+[; ;Nokia_5110.c: 392: unsigned char data;
+[; ;Nokia_5110.c: 393: data=n_dato;
+"393
 [e = _data _n_dato ]
-[; ;Nokia_5110.c: 384: for (caa=8;caa>0;caa--){
-"384
+[; ;Nokia_5110.c: 394: for (caa=8;caa>0;caa--){
+"394
 {
 [e = _caa -> -> 8 `i `uc ]
-[e $ > -> _caa `i -> 0 `i 1345  ]
-[e $U 1346  ]
-[e :U 1345 ]
+[e $ > -> _caa `i -> 0 `i 1349  ]
+[e $U 1350  ]
+[e :U 1349 ]
 {
-[; ;Nokia_5110.c: 385: do { LATCbits.LATC3 = 0; } while(0);
-"385
-[e :U 1350 ]
+[; ;Nokia_5110.c: 395: do { LATCbits.LATC3 = 0; } while(0);
+"395
+[e :U 1354 ]
 {
 [e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 1349 ]
-[; ;Nokia_5110.c: 389: if ((data & 0x80)==0) {
-"389
-[e $ ! == & -> _data `i -> 128 `i -> 0 `i 1351  ]
+[e :U 1353 ]
+[; ;Nokia_5110.c: 399: if ((data & 0x80)==0) {
+"399
+[e $ ! == & -> _data `i -> 128 `i -> 0 `i 1355  ]
 {
-[; ;Nokia_5110.c: 390: do { LATCbits.LATC4 = 0; } while(0);
-"390
-[e :U 1354 ]
+[; ;Nokia_5110.c: 400: do { LATCbits.LATC4 = 0; } while(0);
+"400
+[e :U 1358 ]
 {
 [e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 1353 ]
-"393
+[e :U 1357 ]
+"403
 }
-[; ;Nokia_5110.c: 393: }
-[e $U 1355  ]
-"394
-[e :U 1351 ]
-[; ;Nokia_5110.c: 394: else {
+[; ;Nokia_5110.c: 403: }
+[e $U 1359  ]
+"404
+[e :U 1355 ]
+[; ;Nokia_5110.c: 404: else {
 {
-[; ;Nokia_5110.c: 395: do { LATCbits.LATC4 = 1; } while(0);
-"395
-[e :U 1358 ]
+[; ;Nokia_5110.c: 405: do { LATCbits.LATC4 = 1; } while(0);
+"405
+[e :U 1362 ]
 {
 [e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
 }
-[e :U 1357 ]
-"398
-}
-[e :U 1355 ]
-[; ;Nokia_5110.c: 398: }
-[; ;Nokia_5110.c: 401: do { LATCbits.LATC3 = 1; } while(0);
-"401
 [e :U 1361 ]
+"408
+}
+[e :U 1359 ]
+[; ;Nokia_5110.c: 408: }
+[; ;Nokia_5110.c: 411: do { LATCbits.LATC3 = 1; } while(0);
+"411
+[e :U 1365 ]
 {
 [e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 1360 ]
-[; ;Nokia_5110.c: 405: data = data << 1;
-"405
-[e = _data -> << -> _data `i -> 1 `i `uc ]
-"406
-}
-"384
-[e -- _caa -> -> 1 `i `uc ]
-[e $ > -> _caa `i -> 0 `i 1345  ]
-[e :U 1346 ]
-"406
-}
-[; ;Nokia_5110.c: 406: }
-[; ;Nokia_5110.c: 407: do { LATCbits.LATC3 = 0; } while(0);
-"407
 [e :U 1364 ]
+[; ;Nokia_5110.c: 415: data = data << 1;
+"415
+[e = _data -> << -> _data `i -> 1 `i `uc ]
+"416
+}
+"394
+[e -- _caa -> -> 1 `i `uc ]
+[e $ > -> _caa `i -> 0 `i 1349  ]
+[e :U 1350 ]
+"416
+}
+[; ;Nokia_5110.c: 416: }
+[; ;Nokia_5110.c: 417: do { LATCbits.LATC3 = 0; } while(0);
+"417
+[e :U 1368 ]
 {
 [e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 1363 ]
-[; ;Nokia_5110.c: 423: }
-"423
-[e :UE 1344 ]
+[e :U 1367 ]
+[; ;Nokia_5110.c: 433: }
+"433
+[e :UE 1348 ]
 }
-"426
+"436
 [v _nokia_gotoxy `(v ~T0 @X0 1 ef2`uc`uc ]
-"427
+"437
 {
-[; ;Nokia_5110.c: 426: void nokia_gotoxy(char x, char y)
-[; ;Nokia_5110.c: 427: {
+[; ;Nokia_5110.c: 436: void nokia_gotoxy(char x, char y)
+[; ;Nokia_5110.c: 437: {
 [e :U _nokia_gotoxy ]
-"426
+"436
 [v _x `uc ~T0 @X0 1 r1 ]
 [v _y `uc ~T0 @X0 1 r2 ]
-"427
-[f ]
-[; ;Nokia_5110.c: 428: if(x>83)
-"428
-[e $ ! > -> _x `i -> 83 `i 1366  ]
-[; ;Nokia_5110.c: 429: x=83;
-"429
-[e = _x -> -> 83 `i `uc ]
-[e :U 1366 ]
-[; ;Nokia_5110.c: 430: if(y>5)
-"430
-[e $ ! > -> _y `i -> 5 `i 1367  ]
-[; ;Nokia_5110.c: 431: y=5;
-"431
-[e = _y -> -> 5 `i `uc ]
-[e :U 1367 ]
-[; ;Nokia_5110.c: 432: idx=x;
-"432
-[e = _idx _x ]
-[; ;Nokia_5110.c: 433: idy=y;
-"433
-[e = _idy _y ]
-[; ;Nokia_5110.c: 434: }
-"434
-[e :UE 1365 ]
-}
 "437
-[v _nokia_contrast `(v ~T0 @X0 1 ef1`uc ]
-"438
-{
-[; ;Nokia_5110.c: 437: void nokia_contrast(unsigned char contraste)
-[; ;Nokia_5110.c: 438: {
-[e :U _nokia_contrast ]
-"437
-[v _contraste `uc ~T0 @X0 1 r1 ]
-"438
 [f ]
-[; ;Nokia_5110.c: 439: nokia_write_command(0x21);
+[; ;Nokia_5110.c: 438: if(x>83)
+"438
+[e $ ! > -> _x `i -> 83 `i 1370  ]
+[; ;Nokia_5110.c: 439: x=83;
 "439
-[e ( _nokia_write_command (1 -> -> 33 `i `uc ]
-[; ;Nokia_5110.c: 440: nokia_write_command(0x80 | contraste);
+[e = _x -> -> 83 `i `uc ]
+[e :U 1370 ]
+[; ;Nokia_5110.c: 440: if(y>5)
 "440
-[e ( _nokia_write_command (1 -> | -> 128 `i -> _contraste `i `uc ]
-[; ;Nokia_5110.c: 441: nokia_write_command(0x20);
+[e $ ! > -> _y `i -> 5 `i 1371  ]
+[; ;Nokia_5110.c: 441: y=5;
 "441
-[e ( _nokia_write_command (1 -> -> 32 `i `uc ]
-[; ;Nokia_5110.c: 442: }
+[e = _y -> -> 5 `i `uc ]
+[e :U 1371 ]
+[; ;Nokia_5110.c: 442: idx=x;
 "442
-[e :UE 1368 ]
+[e = _idx _x ]
+[; ;Nokia_5110.c: 443: idy=y;
+"443
+[e = _idy _y ]
+[; ;Nokia_5110.c: 444: }
+"444
+[e :UE 1369 ]
 }
-"445
-[v _nokia_printchar `(v ~T0 @X0 1 ef1`uc ]
-"446
-{
-[; ;Nokia_5110.c: 445: void nokia_printchar(char c)
-[; ;Nokia_5110.c: 446: {
-[e :U _nokia_printchar ]
-"445
-[v _c `uc ~T0 @X0 1 r1 ]
-"446
-[f ]
 "447
+[v _nokia_contrast `(v ~T0 @X0 1 ef1`uc ]
+"448
+{
+[; ;Nokia_5110.c: 447: void nokia_contrast(unsigned char contraste)
+[; ;Nokia_5110.c: 448: {
+[e :U _nokia_contrast ]
+"447
+[v _contraste `uc ~T0 @X0 1 r1 ]
+"448
+[f ]
+[; ;Nokia_5110.c: 449: nokia_write_command(0x21);
+"449
+[e ( _nokia_write_command (1 -> -> 33 `i `uc ]
+[; ;Nokia_5110.c: 450: nokia_write_command(0x80 | contraste);
+"450
+[e ( _nokia_write_command (1 -> | -> 128 `i -> _contraste `i `uc ]
+[; ;Nokia_5110.c: 451: nokia_write_command(0x20);
+"451
+[e ( _nokia_write_command (1 -> -> 32 `i `uc ]
+[; ;Nokia_5110.c: 452: }
+"452
+[e :UE 1372 ]
+}
+"455
+[v _nokia_printchar `(v ~T0 @X0 1 ef1`uc ]
+"456
+{
+[; ;Nokia_5110.c: 455: void nokia_printchar(char c)
+[; ;Nokia_5110.c: 456: {
+[e :U _nokia_printchar ]
+"455
+[v _c `uc ~T0 @X0 1 r1 ]
+"456
+[f ]
+"457
 [v _char_row `uc ~T0 @X0 1 a ]
 [v _char_pos `uc ~T0 @X0 1 a ]
 [v _char_data `uc ~T0 @X0 1 a ]
-[; ;Nokia_5110.c: 447: char char_row,char_pos,char_data;
-[; ;Nokia_5110.c: 449: if (c<0x20) return;
-"449
-[e $ ! < -> _c `i -> 32 `i 1370  ]
-[e $UE 1369  ]
-[e :U 1370 ]
-[; ;Nokia_5110.c: 450: if (c>0x7f) return;
-"450
-[e $ ! > -> _c `i -> 127 `i 1371  ]
-[e $UE 1369  ]
-[e :U 1371 ]
-[; ;Nokia_5110.c: 452: for (char_row=0;char_row<5;char_row++)
-"452
+[; ;Nokia_5110.c: 457: char char_row,char_pos,char_data;
+[; ;Nokia_5110.c: 459: if (c<0x20) return;
+"459
+[e $ ! < -> _c `i -> 32 `i 1374  ]
+[e $UE 1373  ]
+[e :U 1374 ]
+[; ;Nokia_5110.c: 460: if (c>0x7f) return;
+"460
+[e $ ! > -> _c `i -> 127 `i 1375  ]
+[e $UE 1373  ]
+[e :U 1375 ]
+[; ;Nokia_5110.c: 462: for (char_row=0;char_row<5;char_row++)
+"462
 {
 [e = _char_row -> -> 0 `i `uc ]
-[e $ < -> _char_row `i -> 5 `i 1372  ]
-[e $U 1373  ]
-"453
-[e :U 1372 ]
-[; ;Nokia_5110.c: 453: {
-{
-[; ;Nokia_5110.c: 454: if (idx>83){
-"454
-[e $ ! > -> _idx `i -> 83 `i 1375  ]
-{
-[; ;Nokia_5110.c: 455: idx=0;
-"455
-[e = _idx -> -> 0 `i `uc ]
-[; ;Nokia_5110.c: 456: idy++;
-"456
-[e ++ _idy -> -> 1 `i `uc ]
-[; ;Nokia_5110.c: 457: if (idy>5)
-"457
-[e $ ! > -> _idy `i -> 5 `i 1376  ]
-[; ;Nokia_5110.c: 458: idy=0;
-"458
-[e = _idy -> -> 0 `i `uc ]
-[e :U 1376 ]
-"459
-}
-[e :U 1375 ]
-[; ;Nokia_5110.c: 459: }
-[; ;Nokia_5110.c: 460: if (c<0x50){
-"460
-[e $ ! < -> _c `i -> 80 `i 1377  ]
-{
-[; ;Nokia_5110.c: 461: char_pos=((c-0x20)*5);
-"461
-[e = _char_pos -> * - -> _c `i -> 32 `i -> 5 `i `uc ]
-[; ;Nokia_5110.c: 462: char_data=TABLA1[(char_pos+char_row)];
-"462
-[e = _char_data *U + &U _TABLA1 * -> -> + -> _char_pos `i -> _char_row `i `ui `ux -> -> # *U &U _TABLA1 `ui `ux ]
+[e $ < -> _char_row `i -> 5 `i 1376  ]
+[e $U 1377  ]
 "463
-}
-[e :U 1377 ]
-[; ;Nokia_5110.c: 463: }
-[; ;Nokia_5110.c: 464: if (c>0x4f){
+[e :U 1376 ]
+[; ;Nokia_5110.c: 463: {
+{
+[; ;Nokia_5110.c: 464: if (idx>83){
 "464
-[e $ ! > -> _c `i -> 79 `i 1378  ]
+[e $ ! > -> _idx `i -> 83 `i 1379  ]
 {
-[; ;Nokia_5110.c: 465: char_pos=((c-0x50)*5);
+[; ;Nokia_5110.c: 465: idx=0;
 "465
-[e = _char_pos -> * - -> _c `i -> 80 `i -> 5 `i `uc ]
-[; ;Nokia_5110.c: 466: char_data=TABLA2[(char_pos+char_row)];
+[e = _idx -> -> 0 `i `uc ]
+[; ;Nokia_5110.c: 466: idy++;
 "466
-[e = _char_data *U + &U _TABLA2 * -> -> + -> _char_pos `i -> _char_row `i `ui `ux -> -> # *U &U _TABLA2 `ui `ux ]
+[e ++ _idy -> -> 1 `i `uc ]
+[; ;Nokia_5110.c: 467: if (idy>5)
 "467
-}
-[e :U 1378 ]
-[; ;Nokia_5110.c: 467: }
-[; ;Nokia_5110.c: 468: buffer[idx][idy]=char_data;
+[e $ ! > -> _idy `i -> 5 `i 1380  ]
+[; ;Nokia_5110.c: 468: idy=0;
 "468
-[e = *U + &U *U + &U _buffer * -> _idx `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux * -> _idy `ux -> -> # *U &U *U + &U _buffer * -> _idx `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux `ui `ux _char_data ]
-[; ;Nokia_5110.c: 469: idx++;
-"469
-[e ++ _idx -> -> 1 `i `uc ]
-"470
-}
-"452
-[e ++ _char_row -> -> 1 `i `uc ]
-[e $ < -> _char_row `i -> 5 `i 1372  ]
-[e :U 1373 ]
-"470
-}
-[; ;Nokia_5110.c: 470: }
-[; ;Nokia_5110.c: 471: buffer[idx][idy]=0x00;
-"471
-[e = *U + &U *U + &U _buffer * -> _idx `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux * -> _idy `ux -> -> # *U &U *U + &U _buffer * -> _idx `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux `ui `ux -> -> 0 `i `uc ]
-[; ;Nokia_5110.c: 472: idx++;
-"472
-[e ++ _idx -> -> 1 `i `uc ]
-[; ;Nokia_5110.c: 473: }
-"473
-[e :UE 1369 ]
-}
-"476
-[v _nokia_printstr `(v ~T0 @X0 1 ef1`*uc ]
-"477
-{
-[; ;Nokia_5110.c: 476: void nokia_printstr(char* message)
-[; ;Nokia_5110.c: 477: {
-[e :U _nokia_printstr ]
-"476
-[v _message `*uc ~T0 @X0 1 r1 ]
-"477
-[f ]
-[; ;Nokia_5110.c: 478: for(; *message != '\0';message++){
-"478
-{
-[e $U 1383  ]
+[e = _idy -> -> 0 `i `uc ]
 [e :U 1380 ]
+"469
+}
+[e :U 1379 ]
+[; ;Nokia_5110.c: 469: }
+[; ;Nokia_5110.c: 470: if (c<0x50){
+"470
+[e $ ! < -> _c `i -> 80 `i 1381  ]
 {
-[; ;Nokia_5110.c: 479: nokia_printchar(*message);
+[; ;Nokia_5110.c: 471: char_pos=((c-0x20)*5);
+"471
+[e = _char_pos -> * - -> _c `i -> 32 `i -> 5 `i `uc ]
+[; ;Nokia_5110.c: 472: char_data=TABLA1[(char_pos+char_row)];
+"472
+[e = _char_data *U + &U _TABLA1 * -> -> + -> _char_pos `i -> _char_row `i `ui `ux -> -> # *U &U _TABLA1 `ui `ux ]
+"473
+}
+[e :U 1381 ]
+[; ;Nokia_5110.c: 473: }
+[; ;Nokia_5110.c: 474: if (c>0x4f){
+"474
+[e $ ! > -> _c `i -> 79 `i 1382  ]
+{
+[; ;Nokia_5110.c: 475: char_pos=((c-0x50)*5);
+"475
+[e = _char_pos -> * - -> _c `i -> 80 `i -> 5 `i `uc ]
+[; ;Nokia_5110.c: 476: char_data=TABLA2[(char_pos+char_row)];
+"476
+[e = _char_data *U + &U _TABLA2 * -> -> + -> _char_pos `i -> _char_row `i `ui `ux -> -> # *U &U _TABLA2 `ui `ux ]
+"477
+}
+[e :U 1382 ]
+[; ;Nokia_5110.c: 477: }
+[; ;Nokia_5110.c: 478: buffer[idx][idy]=char_data;
+"478
+[e = *U + &U *U + &U _buffer * -> _idx `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux * -> _idy `ux -> -> # *U &U *U + &U _buffer * -> _idx `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux `ui `ux _char_data ]
+[; ;Nokia_5110.c: 479: idx++;
 "479
-[e ( _nokia_printchar (1 *U _message ]
+[e ++ _idx -> -> 1 `i `uc ]
 "480
 }
-"478
-[e ++ _message * -> -> 1 `i `x -> -> # *U _message `i `x ]
-[e :U 1383 ]
-[e $ != -> *U _message `ui -> 0 `ui 1380  ]
-[e :U 1381 ]
+"462
+[e ++ _char_row -> -> 1 `i `uc ]
+[e $ < -> _char_row `i -> 5 `i 1376  ]
+[e :U 1377 ]
 "480
 }
 [; ;Nokia_5110.c: 480: }
-[; ;Nokia_5110.c: 481: }
+[; ;Nokia_5110.c: 481: buffer[idx][idy]=0x00;
 "481
-[e :UE 1379 ]
+[e = *U + &U *U + &U _buffer * -> _idx `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux * -> _idy `ux -> -> # *U &U *U + &U _buffer * -> _idx `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux `ui `ux -> -> 0 `i `uc ]
+[; ;Nokia_5110.c: 482: idx++;
+"482
+[e ++ _idx -> -> 1 `i `uc ]
+[; ;Nokia_5110.c: 483: }
+"483
+[e :UE 1373 ]
 }
-"485
-[v _nokia_bigc `(v ~T0 @X0 1 ef1`uc ]
 "486
-{
-[; ;Nokia_5110.c: 485: void nokia_bigc(char c)
-[; ;Nokia_5110.c: 486: {
-[e :U _nokia_bigc ]
-"485
-[v _c `uc ~T0 @X0 1 r1 ]
-"486
-[f ]
+[v _nokia_printstr `(v ~T0 @X0 1 ef1`*uc ]
 "487
+{
+[; ;Nokia_5110.c: 486: void nokia_printstr(char* message)
+[; ;Nokia_5110.c: 487: {
+[e :U _nokia_printstr ]
+"486
+[v _message `*uc ~T0 @X0 1 r1 ]
+"487
+[f ]
+[; ;Nokia_5110.c: 488: for(; *message != '\0';message++){
+"488
+{
+[e $U 1387  ]
+[e :U 1384 ]
+{
+[; ;Nokia_5110.c: 489: nokia_printchar(*message);
+"489
+[e ( _nokia_printchar (1 *U _message ]
+"490
+}
+"488
+[e ++ _message * -> -> 1 `i `x -> -> # *U _message `i `x ]
+[e :U 1387 ]
+[e $ != -> *U _message `ui -> 0 `ui 1384  ]
+[e :U 1385 ]
+"490
+}
+[; ;Nokia_5110.c: 490: }
+[; ;Nokia_5110.c: 491: }
+"491
+[e :UE 1383 ]
+}
+"495
+[v _nokia_bigc `(v ~T0 @X0 1 ef1`uc ]
+"496
+{
+[; ;Nokia_5110.c: 495: void nokia_bigc(char c)
+[; ;Nokia_5110.c: 496: {
+[e :U _nokia_bigc ]
+"495
+[v _c `uc ~T0 @X0 1 r1 ]
+"496
+[f ]
+"497
 [v _char_pos `uc ~T0 @X0 1 a ]
 [v _i `uc ~T0 @X0 1 a ]
 [v _max_i `uc ~T0 @X0 1 a ]
-[; ;Nokia_5110.c: 487: char char_pos,i,max_i;
-[; ;Nokia_5110.c: 489: if(c==32)
-"489
-[e $ ! == -> _c `i -> 32 `i 1385  ]
-[; ;Nokia_5110.c: 490: c=47;
-"490
+[; ;Nokia_5110.c: 497: char char_pos,i,max_i;
+[; ;Nokia_5110.c: 499: if(c==32)
+"499
+[e $ ! == -> _c `i -> 32 `i 1389  ]
+[; ;Nokia_5110.c: 500: c=47;
+"500
 [e = _c -> -> 47 `i `uc ]
-[e :U 1385 ]
-[; ;Nokia_5110.c: 491: if(c==46)
-"491
-[e $ ! == -> _c `i -> 46 `i 1386  ]
-[; ;Nokia_5110.c: 492: max_i=5;
-"492
+[e :U 1389 ]
+[; ;Nokia_5110.c: 501: if(c==46)
+"501
+[e $ ! == -> _c `i -> 46 `i 1390  ]
+[; ;Nokia_5110.c: 502: max_i=5;
+"502
 [e = _max_i -> -> 5 `i `uc ]
-[e $U 1387  ]
-"493
-[e :U 1386 ]
-[; ;Nokia_5110.c: 493: else
-[; ;Nokia_5110.c: 494: max_i=10;
-"494
+[e $U 1391  ]
+"503
+[e :U 1390 ]
+[; ;Nokia_5110.c: 503: else
+[; ;Nokia_5110.c: 504: max_i=10;
+"504
 [e = _max_i -> -> 10 `i `uc ]
-[e :U 1387 ]
-[; ;Nokia_5110.c: 495: char_pos=(c-45);
-"495
+[e :U 1391 ]
+[; ;Nokia_5110.c: 505: char_pos=(c-45);
+"505
 [e = _char_pos -> - -> _c `i -> 45 `i `uc ]
-[; ;Nokia_5110.c: 497: for(i=0;i<max_i;i++){
-"497
+[; ;Nokia_5110.c: 507: for(i=0;i<max_i;i++){
+"507
 {
 [e = _i -> -> 0 `i `uc ]
-[e $U 1391  ]
-[e :U 1388 ]
+[e $U 1395  ]
+[e :U 1392 ]
 {
-[; ;Nokia_5110.c: 498: buffer[idx][idy]=Font10x12[char_pos][2*i];
-"498
+[; ;Nokia_5110.c: 508: buffer[idx][idy]=Font10x12[char_pos][2*i];
+"508
 [e = *U + &U *U + &U _buffer * -> _idx `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux * -> _idy `ux -> -> # *U &U *U + &U _buffer * -> _idx `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux `ui `ux *U + &U *U + &U _Font10x12 * -> _char_pos `ux -> * -> # *U &U *U &U _Font10x12 `ui -> -> 20 `i `ui `ux * -> -> * -> 2 `i -> _i `i `ui `ux -> -> # *U &U *U + &U _Font10x12 * -> _char_pos `ux -> * -> # *U &U *U &U _Font10x12 `ui -> -> 20 `i `ui `ux `ui `ux ]
-[; ;Nokia_5110.c: 499: buffer[idx][idy+1]=Font10x12[char_pos][2*i+1];
-"499
+[; ;Nokia_5110.c: 509: buffer[idx][idy+1]=Font10x12[char_pos][2*i+1];
+"509
 [e = *U + &U *U + &U _buffer * -> _idx `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux * -> -> + -> _idy `i -> 1 `i `ui `ux -> -> # *U &U *U + &U _buffer * -> _idx `ux -> * -> # *U &U *U &U _buffer `ui -> -> 6 `i `ui `ux `ui `ux *U + &U *U + &U _Font10x12 * -> _char_pos `ux -> * -> # *U &U *U &U _Font10x12 `ui -> -> 20 `i `ui `ux * -> -> + * -> 2 `i -> _i `i -> 1 `i `ui `ux -> -> # *U &U *U + &U _Font10x12 * -> _char_pos `ux -> * -> # *U &U *U &U _Font10x12 `ui -> -> 20 `i `ui `ux `ui `ux ]
-[; ;Nokia_5110.c: 500: idx++;
-"500
+[; ;Nokia_5110.c: 510: idx++;
+"510
 [e ++ _idx -> -> 1 `i `uc ]
-"501
+"511
 }
-"497
+"507
 [e ++ _i -> -> 1 `i `uc ]
-[e :U 1391 ]
-[e $ < -> _i `i -> _max_i `i 1388  ]
-[e :U 1389 ]
-"501
+[e :U 1395 ]
+[e $ < -> _i `i -> _max_i `i 1392  ]
+[e :U 1393 ]
+"511
 }
-[; ;Nokia_5110.c: 501: }
-[; ;Nokia_5110.c: 502: }
-"502
-[e :UE 1384 ]
+[; ;Nokia_5110.c: 511: }
+[; ;Nokia_5110.c: 512: }
+"512
+[e :UE 1388 ]
 }
-"505
+"515
 [v _nokia_delay `(v ~T0 @X0 1 ef1`i ]
 {
-[; ;Nokia_5110.c: 505: void nokia_delay(int count) {
+[; ;Nokia_5110.c: 515: void nokia_delay(int count) {
 [e :U _nokia_delay ]
 [v _count `i ~T0 @X0 1 r1 ]
 [f ]
-[; ;Nokia_5110.c: 506: _delay((unsigned long)((1)*(1000000/4000.0)));
-"506
+[; ;Nokia_5110.c: 516: _delay((unsigned long)((1)*(1000000/4000.0)));
+"516
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
-[; ;Nokia_5110.c: 515: }
-"515
-[e :UE 1392 ]
+[; ;Nokia_5110.c: 525: }
+"525
+[e :UE 1396 ]
 }

@@ -66,14 +66,13 @@ extern int state;
   Section: TMR0 APIs
 */
 
-void (*TMR0_InterruptHandler)(void);
 
 void TMR0_Initialize(void)
 {
     // Set TMR0 to the options selected in the User Interface
 
-    // T0CS HFINTOSC; T0CKPS 1:8; T0ASYNC not_synchronised; 
-    T0CON1 = 0x73;
+    // T0CS HFINTOSC; T0CKPS 1:4; T0ASYNC not_synchronised; 
+    T0CON1 = 0x72;
 
     // TMR0H 121; 
     TMR0H = 0x79;
@@ -90,8 +89,6 @@ void TMR0_Initialize(void)
     // Enabling TMR0 interrupt.
     PIE0bits.TMR0IE = 1;
 
-    // Set Default Interrupt Handler
-    TMR0_SetInterruptHandler(TMR0_DefaultInterruptHandler);
 
     // T0OUTPS 1:8; T0EN enabled; T016BIT 16-bit; 
     T0CON0 = 0x97;
@@ -144,100 +141,32 @@ void TMR0_ISR(void)
     TMR0H = timer0ReloadVal16bit >> 8;
     TMR0L = (uint8_t) timer0ReloadVal16bit;
 
-    if(TMR0_InterruptHandler)
-    {
-        TMR0_InterruptHandler();
-    }
-
+    
     // add your TMR0 interrupt custom code
  //   LCD_BL_Toggle();
             if (state==0) {
-//        IO_RB1_SetLow();
-                LCD_BL_SetLow();
+//              IO_RB1_SetLow();
+//              LCD_BL_SetLow();
                 state=1;
-
                 
-                
-   uint16_t convertedValue;    
+                uint16_t convertedValue;    
+                //ADCC_Initialize();    
+                ADCC_StartConversion(6);
+                while(!ADCC_IsConversionDone());
+                convertedValue = ADCC_GetConversionResult();                
 
-    //ADCC_Initialize();    
-    ADCC_StartConversion(6);
-    while(!ADCC_IsConversionDone());
-    convertedValue = ADCC_GetConversionResult();                
-
-    
-    
-    
-    char sbuf[20];
-    sprintf(&sbuf[0],"%i",convertedValue);
-    nokia_clean_line(2);
-    nokia_gotoxy(0,2);
-    nokia_printstr(&sbuf[0]);
-    nokia_refresh();
-    
-    
-               
-                /*
-    nokia_init();   
-    nokia_clean_buffer();
-    nokia_gotoxy(64,4);
-    nokia_printchar(0x30+LCD_contrast);
-    nokia_refresh();
-
-  */
-            
-            
-            
+                char sbuf[20];
+                sprintf(&sbuf[0],"%#7.3f uV rms",convertedValue*0.025);
+                nokia_clean_line(2);
+                nokia_gotoxy(0,2);
+                nokia_printstr(&sbuf[0]);
+                nokia_refresh_line(2);
             } else {
-//        IO_RB1_SetHigh();
-                LCD_BL_SetHigh();
+//              IO_RB1_SetHigh();
+//               LCD_BL_SetHigh();
  
                 state=0;
-/*
-            nokia_contrast(1<<LCD_contrast++);
-            
-            if (LCD_contrast>=7) LCD_contrast=0;
-
-    nokia_clean_buffer();
-    nokia_gotoxy(20,3);
-    nokia_printchar('X');
-    nokia_printchar('Y');
-    nokia_printchar('Z');
-    nokia_printchar('X');
-    nokia_printchar('Y');
-    nokia_printchar('Z');
-    nokia_refresh();
- */           
-            /*
-    nokia_init();   
-    nokia_clean_buffer();
-    nokia_gotoxy(3,3);
-    nokia_printchar('A');
-    nokia_printchar('B');
-    nokia_printchar('C');
-    nokia_printchar('D');
-    nokia_printchar('E');
-    nokia_printchar('F');
-    nokia_refresh();
-*/
-
-        }
-
-    
-    
-    
-    
-    
-}
-
-
-void TMR0_SetInterruptHandler(void (* InterruptHandler)(void)){
-    TMR0_InterruptHandler = InterruptHandler;
-}
-
-void TMR0_DefaultInterruptHandler(void){
-    // add your TMR0 interrupt custom code
-    // or set custom function using TMR0_SetInterruptHandler()
+            }
 }
 
 /**

@@ -87,6 +87,7 @@ typedef signed short long int int24_t;
 
 typedef enum
 {
+    channel_ANA6 =  0x6,
     channel_VBAT_div_3 =  0x39,
     channel_VLCD3_div_4 =  0x3A,
     channel_Vss =  0x3B,

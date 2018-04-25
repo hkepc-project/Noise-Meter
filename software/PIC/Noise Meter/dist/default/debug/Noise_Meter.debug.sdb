@@ -5,6 +5,7 @@
 [d frameptr 6 ]
 "114 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/adcc.c
 [e E12471 . `uc
+channel_ANA6 6
 channel_VBAT_div_3 57
 channel_VLCD3_div_4 58
 channel_Vss 59
@@ -13,8 +14,9 @@ channel_DAC1_Output 61
 channel_FVR_Buffer1 62
 channel_FVR_Buffer2 63
 ]
-"164 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
+"154 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
 [e E12556 . `uc
+channel_ANA6 6
 channel_VBAT_div_3 57
 channel_VLCD3_div_4 58
 channel_Vss 59
@@ -23,16 +25,44 @@ channel_DAC1_Output 61
 channel_FVR_Buffer1 62
 channel_FVR_Buffer2 63
 ]
-"492 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"409 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+"425
+[v _scale scale `(d  1 s 3 scale ]
+"492
 [v _sprintf sprintf `(i  1 e 2 0 ]
+"60 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
 "62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
 "86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
-[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
-[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"60 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 [v i1___wmul __wmul `(ui  1 e 2 0 ]
@@ -65,14 +95,10 @@ channel_FVR_Buffer2 63
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 "84 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"71 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
+"70 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
-"139
+"136
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
-"234
-[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
-"238
-[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
 "211 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
 [v _nokia_init nokia_init `(v  1 e 1 0 ]
 "293
@@ -81,35 +107,36 @@ channel_FVR_Buffer2 63
 [v _nokia_clean_line nokia_clean_line `(v  1 e 1 0 ]
 "319
 [v _nokia_refresh nokia_refresh `(v  1 e 1 0 ]
-[v i1_nokia_refresh nokia_refresh `(v  1 e 1 0 ]
 "331
+[v _nokia_refresh_line nokia_refresh_line `(v  1 e 1 0 ]
+"341
 [v _nokia_write_command nokia_write_command `(v  1 e 1 0 ]
 [v i1_nokia_write_command nokia_write_command `(v  1 e 1 0 ]
-"354
+"364
 [v _nokia_write_data nokia_write_data `(v  1 e 1 0 ]
 [v i1_nokia_write_data nokia_write_data `(v  1 e 1 0 ]
-"378
+"388
 [v _nokia_write_dorc nokia_write_dorc `(v  1 e 1 0 ]
 [v i1_nokia_write_dorc nokia_write_dorc `(v  1 e 1 0 ]
-"426
+"436
 [v _nokia_gotoxy nokia_gotoxy `(v  1 e 1 0 ]
 [v i1_nokia_gotoxy nokia_gotoxy `(v  1 e 1 0 ]
-"445
+"455
 [v _nokia_printchar nokia_printchar `(v  1 e 1 0 ]
 [v i1_nokia_printchar nokia_printchar `(v  1 e 1 0 ]
-"476
+"486
 [v _nokia_printstr nokia_printstr `(v  1 e 1 0 ]
 [v i1_nokia_printstr nokia_printstr `(v  1 e 1 0 ]
-"505
+"515
 [v _nokia_delay nokia_delay `(v  1 e 1 0 ]
-[s S715 . 1 `uc 1 INTEDG 1 0 :1:0 
+[s S666 . 1 `uc 1 INTEDG 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
 "424 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f19156.h
-[u S720 . 1 `S715 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES720  1 e 1 @11 ]
+[u S671 . 1 `S666 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES671  1 e 1 @11 ]
 "646
 [v _TRISA TRISA `VEuc  1 e 1 @18 ]
 "703
@@ -120,7 +147,7 @@ channel_FVR_Buffer2 63
 [v _LATA LATA `VEuc  1 e 1 @24 ]
 "879
 [v _LATB LATB `VEuc  1 e 1 @25 ]
-[s S566 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S631 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -130,11 +157,11 @@ channel_FVR_Buffer2 63
 `uc 1 LATB7 1 0 :1:7 
 ]
 "896
-[u S575 . 1 `S566 1 . 1 0 ]
-[v _LATBbits LATBbits `VES575  1 e 1 @25 ]
+[u S640 . 1 `S631 1 . 1 0 ]
+[v _LATBbits LATBbits `VES640  1 e 1 @25 ]
 "941
 [v _LATC LATC `VEuc  1 e 1 @26 ]
-[s S742 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S701 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -144,8 +171,8 @@ channel_FVR_Buffer2 63
 `uc 1 LATC7 1 0 :1:7 
 ]
 "958
-[u S751 . 1 `S742 1 . 1 0 ]
-[v _LATCbits LATCbits `VES751  1 e 1 @26 ]
+[u S710 . 1 `S701 1 . 1 0 ]
+[v _LATCbits LATCbits `VES710  1 e 1 @26 ]
 "1032
 [v _ADLTHL ADLTHL `VEuc  1 e 1 @140 ]
 "1160
@@ -198,7 +225,7 @@ channel_FVR_Buffer2 63
 [v _ADPREH ADPREH `VEuc  1 e 1 @272 ]
 "4071
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @273 ]
-[s S127 . 1 `uc 1 GO 1 0 :1:0 
+[s S128 . 1 `uc 1 GO 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 FM 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -208,7 +235,7 @@ channel_FVR_Buffer2 63
 `uc 1 ON 1 0 :1:7 
 ]
 "4104
-[s S136 . 1 `uc 1 ADGO 1 0 :1:0 
+[s S137 . 1 `uc 1 ADGO 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 ADFM 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -217,38 +244,38 @@ channel_FVR_Buffer2 63
 `uc 1 ADCONT 1 0 :1:6 
 `uc 1 ADON 1 0 :1:7 
 ]
-[s S145 . 1 `uc 1 DONE 1 0 :1:0 
+[s S146 . 1 `uc 1 DONE 1 0 :1:0 
 ]
-[s S147 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+[s S148 . 1 `uc 1 GO_nDONE 1 0 :1:0 
 ]
-[u S149 . 1 `S127 1 . 1 0 `S136 1 . 1 0 `S145 1 . 1 0 `S147 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES149  1 e 1 @273 ]
+[u S150 . 1 `S128 1 . 1 0 `S137 1 . 1 0 `S146 1 . 1 0 `S148 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES150  1 e 1 @273 ]
 "4169
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @274 ]
-[s S364 . 1 `uc 1 DSEN 1 0 :1:0 
+[s S365 . 1 `uc 1 DSEN 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 GPOL 1 0 :1:5 
 `uc 1 IPEN 1 0 :1:6 
 `uc 1 PPOL 1 0 :1:7 
 ]
 "4190
-[s S370 . 1 `uc 1 ADDSEN 1 0 :1:0 
+[s S371 . 1 `uc 1 ADDSEN 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 ADGPOL 1 0 :1:5 
 `uc 1 ADIPEN 1 0 :1:6 
 `uc 1 ADPPOL 1 0 :1:7 
 ]
-[u S376 . 1 `S364 1 . 1 0 `S370 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES376  1 e 1 @274 ]
+[u S377 . 1 `S365 1 . 1 0 `S371 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES377  1 e 1 @274 ]
 "4235
 [v _ADCON2 ADCON2 `VEuc  1 e 1 @275 ]
-[s S234 . 1 `uc 1 MODE 1 0 :3:0 
+[s S235 . 1 `uc 1 MODE 1 0 :3:0 
 `uc 1 ACLR 1 0 :1:3 
 `uc 1 CRS 1 0 :3:4 
 `uc 1 PSIS 1 0 :1:7 
 ]
 "4280
-[s S239 . 1 `uc 1 ADMD0 1 0 :1:0 
+[s S240 . 1 `uc 1 ADMD0 1 0 :1:0 
 `uc 1 ADMD1 1 0 :1:1 
 `uc 1 ADMD2 1 0 :1:2 
 `uc 1 ADACLR 1 0 :1:3 
@@ -257,11 +284,11 @@ channel_FVR_Buffer2 63
 `uc 1 ADCRS2 1 0 :1:6 
 `uc 1 ADPSIS 1 0 :1:7 
 ]
-[s S248 . 1 `uc 1 ADMD 1 0 :3:0 
+[s S249 . 1 `uc 1 ADMD 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 ADCRS 1 0 :3:4 
 ]
-[s S252 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S253 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -269,22 +296,22 @@ channel_FVR_Buffer2 63
 `uc 1 CRS1 1 0 :1:5 
 `uc 1 CRS2 1 0 :1:6 
 ]
-[s S260 . 1 `uc 1 MD 1 0 :3:0 
+[s S261 . 1 `uc 1 MD 1 0 :3:0 
 ]
-[s S262 . 1 `uc 1 MD0 1 0 :1:0 
+[s S263 . 1 `uc 1 MD0 1 0 :1:0 
 `uc 1 MD1 1 0 :1:1 
 `uc 1 MD2 1 0 :1:2 
 ]
-[u S266 . 1 `S234 1 . 1 0 `S239 1 . 1 0 `S248 1 . 1 0 `S252 1 . 1 0 `S260 1 . 1 0 `S262 1 . 1 0 ]
-[v _ADCON2bits ADCON2bits `VES266  1 e 1 @275 ]
+[u S267 . 1 `S235 1 . 1 0 `S240 1 . 1 0 `S249 1 . 1 0 `S253 1 . 1 0 `S261 1 . 1 0 `S263 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES267  1 e 1 @275 ]
 "4405
 [v _ADCON3 ADCON3 `VEuc  1 e 1 @276 ]
-[s S179 . 1 `uc 1 TMD 1 0 :3:0 
+[s S180 . 1 `uc 1 TMD 1 0 :3:0 
 `uc 1 SOI 1 0 :1:3 
 `uc 1 CALC 1 0 :3:4 
 ]
 "4440
-[s S183 . 1 `uc 1 ADTMD0 1 0 :1:0 
+[s S184 . 1 `uc 1 ADTMD0 1 0 :1:0 
 `uc 1 ADTMD1 1 0 :1:1 
 `uc 1 ADTMD2 1 0 :1:2 
 `uc 1 ADSOI 1 0 :1:3 
@@ -292,11 +319,11 @@ channel_FVR_Buffer2 63
 `uc 1 ADCALC1 1 0 :1:5 
 `uc 1 ADCALC2 1 0 :1:6 
 ]
-[s S191 . 1 `uc 1 ADTMD 1 0 :3:0 
+[s S192 . 1 `uc 1 ADTMD 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 ADCALC 1 0 :3:4 
 ]
-[s S195 . 1 `uc 1 TMD0 1 0 :1:0 
+[s S196 . 1 `uc 1 TMD0 1 0 :1:0 
 `uc 1 TMD1 1 0 :1:1 
 `uc 1 TMD2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -304,11 +331,11 @@ channel_FVR_Buffer2 63
 `uc 1 CALC1 1 0 :1:5 
 `uc 1 CALC2 1 0 :1:6 
 ]
-[u S203 . 1 `S179 1 . 1 0 `S183 1 . 1 0 `S191 1 . 1 0 `S195 1 . 1 0 ]
-[v _ADCON3bits ADCON3bits `VES203  1 e 1 @276 ]
+[u S204 . 1 `S180 1 . 1 0 `S184 1 . 1 0 `S192 1 . 1 0 `S196 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES204  1 e 1 @276 ]
 "4535
 [v _ADSTAT ADSTAT `VEuc  1 e 1 @277 ]
-[s S308 . 1 `uc 1 STAT 1 0 :3:0 
+[s S309 . 1 `uc 1 STAT 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 MATH 1 0 :1:4 
 `uc 1 LTHR 1 0 :1:5 
@@ -316,7 +343,7 @@ channel_FVR_Buffer2 63
 `uc 1 OV 1 0 :1:7 
 ]
 "4568
-[s S315 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+[s S316 . 1 `uc 1 ADSTAT0 1 0 :1:0 
 `uc 1 ADSTAT1 1 0 :1:1 
 `uc 1 ADSTAT2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -325,14 +352,14 @@ channel_FVR_Buffer2 63
 `uc 1 ADUTHR 1 0 :1:6 
 `uc 1 ADAOV 1 0 :1:7 
 ]
-[s S324 . 1 `uc 1 ADSTAT 1 0 :3:0 
+[s S325 . 1 `uc 1 ADSTAT 1 0 :3:0 
 ]
-[s S326 . 1 `uc 1 STAT0 1 0 :1:0 
+[s S327 . 1 `uc 1 STAT0 1 0 :1:0 
 `uc 1 STAT1 1 0 :1:1 
 `uc 1 STAT2 1 0 :1:2 
 ]
-[u S330 . 1 `S308 1 . 1 0 `S315 1 . 1 0 `S324 1 . 1 0 `S326 1 . 1 0 ]
-[v _ADSTATbits ADSTATbits `VES330  1 e 1 @277 ]
+[u S331 . 1 `S309 1 . 1 0 `S316 1 . 1 0 `S325 1 . 1 0 `S327 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES331  1 e 1 @277 ]
 "4653
 [v _ADREF ADREF `VEuc  1 e 1 @278 ]
 "4709
@@ -345,38 +372,38 @@ channel_FVR_Buffer2 63
 [v _TMR0H TMR0H `VEuc  1 e 1 @1437 ]
 "12052
 [v _T0CON0 T0CON0 `VEuc  1 e 1 @1438 ]
-[s S539 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+[s S495 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T016BIT 1 0 :1:4 
 `uc 1 T0OUT 1 0 :1:5 
 `uc 1 T0OE 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
 "12072
-[s S545 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+[s S501 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
 `uc 1 T0OUTPS1 1 0 :1:1 
 `uc 1 T0OUTPS2 1 0 :1:2 
 `uc 1 T0OUTPS3 1 0 :1:3 
 ]
-[u S550 . 1 `S539 1 . 1 0 `S545 1 . 1 0 ]
-[v _T0CON0bits T0CON0bits `VES550  1 e 1 @1438 ]
+[u S506 . 1 `S495 1 . 1 0 `S501 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES506  1 e 1 @1438 ]
 "12122
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @1439 ]
-[s S477 . 1 `uc 1 INTF 1 0 :1:0 
+[s S468 . 1 `uc 1 INTF 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIF 1 0 :1:4 
 `uc 1 TMR0IF 1 0 :1:5 
 ]
 "12995
-[u S482 . 1 `S477 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES482  1 e 1 @1804 ]
-[s S464 . 1 `uc 1 INTE 1 0 :1:0 
+[u S473 . 1 `S468 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES473  1 e 1 @1804 ]
+[s S481 . 1 `uc 1 INTE 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIE 1 0 :1:4 
 `uc 1 TMR0IE 1 0 :1:5 
 ]
 "13334
-[u S469 . 1 `S464 1 . 1 0 ]
-[v _PIE0bits PIE0bits `VES469  1 e 1 @1814 ]
+[u S486 . 1 `S481 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES486  1 e 1 @1814 ]
 "13660
 [v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
 "13706
@@ -403,7 +430,7 @@ channel_FVR_Buffer2 63
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
 "15353
 [v _FVRCON FVRCON `VEuc  1 e 1 @2316 ]
-[s S667 . 1 `uc 1 ADFVR 1 0 :2:0 
+[s S594 . 1 `uc 1 ADFVR 1 0 :2:0 
 `uc 1 CDAFVR 1 0 :2:2 
 `uc 1 TSRNG 1 0 :1:4 
 `uc 1 TSEN 1 0 :1:5 
@@ -411,13 +438,13 @@ channel_FVR_Buffer2 63
 `uc 1 FVREN 1 0 :1:7 
 ]
 "15374
-[s S674 . 1 `uc 1 ADFVR0 1 0 :1:0 
+[s S601 . 1 `uc 1 ADFVR0 1 0 :1:0 
 `uc 1 ADFVR1 1 0 :1:1 
 `uc 1 CDAFVR0 1 0 :1:2 
 `uc 1 CDAFVR1 1 0 :1:3 
 ]
-[u S679 . 1 `S667 1 . 1 0 `S674 1 . 1 0 ]
-[v _FVRCONbits FVRCONbits `VES679  1 e 1 @2316 ]
+[u S606 . 1 `S594 1 . 1 0 `S601 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES606  1 e 1 @2316 ]
 [s S74 . 1 `uc 1 ADCACTPPS 1 0 :5:0 
 ]
 "25590
@@ -450,15 +477,17 @@ channel_FVR_Buffer2 63
 "28572
 [v _WPUE WPUE `VEuc  1 e 1 @8037 ]
 "354 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
-[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+[v _dpowers dpowers `DC[10]ul  1 s 40 dpowers ]
+"7 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\powers.c
+[v __powers_ _powers_ `DC[13]d  1 e 39 0 ]
+"39
+[v __npowers_ _npowers_ `DC[13]d  1 e 39 0 ]
 "51 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\main.c
 [v _state state `i  1 e 2 0 ]
 "60 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
 [v _timer0ReloadVal16bit timer0ReloadVal16bit `VEui  1 e 2 0 ]
 "62
 [v _LCD_contrast LCD_contrast `VEuc  1 e 1 0 ]
-"69
-[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
 "53 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
 [v _buffer buffer `[84][6]uc  1 s 504 buffer ]
 "54
@@ -473,13 +502,13 @@ channel_FVR_Buffer2 63
 "54 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"62
+"68
 [v main@str_greeting str_greeting `[13]uc  1 a 13 23 ]
-"97
+"103
 [v main@i i `i  1 a 2 36 ]
-"57
-[v main@F12664 F12664 `[13]uc  1 s 13 F12664 ]
-"121
+"64
+[v main@F12667 F12667 `[13]uc  1 s 13 F12667 ]
+"127
 } 0
 "319 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
 [v _nokia_refresh nokia_refresh `(v  1 e 1 0 ]
@@ -489,36 +518,34 @@ channel_FVR_Buffer2 63
 [v nokia_refresh@i i `uc  1 a 1 14 ]
 "328
 } 0
-"354
+"364
 [v _nokia_write_data nokia_write_data `(v  1 e 1 0 ]
 {
 [v nokia_write_data@dato dato `uc  1 a 1 wreg ]
 [v nokia_write_data@dato dato `uc  1 a 1 wreg ]
-"356
+"366
 [v nokia_write_data@dato dato `uc  1 a 1 4 ]
-"375
+"385
 } 0
-"476
+"486
 [v _nokia_printstr nokia_printstr `(v  1 e 1 0 ]
 {
-[v nokia_printstr@message message `*.4uc  1 a 1 wreg ]
-[v nokia_printstr@message message `*.4uc  1 a 1 wreg ]
-[v nokia_printstr@message message `*.4uc  1 a 1 21 ]
-"481
+[v nokia_printstr@message message `*.39uc  1 p 2 20 ]
+"491
 } 0
-"445
+"455
 [v _nokia_printchar nokia_printchar `(v  1 e 1 0 ]
 {
 [v nokia_printchar@c c `uc  1 a 1 wreg ]
-"447
+"457
 [v nokia_printchar@char_row char_row `uc  1 a 1 18 ]
 [v nokia_printchar@char_pos char_pos `uc  1 a 1 17 ]
 [v nokia_printchar@char_data char_data `uc  1 a 1 16 ]
-"445
+"455
 [v nokia_printchar@c c `uc  1 a 1 wreg ]
-"449
+"459
 [v nokia_printchar@c c `uc  1 a 1 19 ]
-"473
+"483
 } 0
 "4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
 [v ___bmul __bmul `(uc  1 e 1 0 ]
@@ -538,44 +565,44 @@ channel_FVR_Buffer2 63
 {
 "267
 } 0
-"331
+"341
 [v _nokia_write_command nokia_write_command `(v  1 e 1 0 ]
 {
 [v nokia_write_command@comando comando `uc  1 a 1 wreg ]
 [v nokia_write_command@comando comando `uc  1 a 1 wreg ]
-"333
+"343
 [v nokia_write_command@comando comando `uc  1 a 1 4 ]
-"351
+"361
 } 0
-"378
+"388
 [v _nokia_write_dorc nokia_write_dorc `(v  1 e 1 0 ]
 {
 [v nokia_write_dorc@n_dato n_dato `uc  1 a 1 wreg ]
-"382
+"392
 [v nokia_write_dorc@data data `uc  1 a 1 3 ]
-"381
+"391
 [v nokia_write_dorc@caa caa `uc  1 a 1 2 ]
-"378
+"388
 [v nokia_write_dorc@n_dato n_dato `uc  1 a 1 wreg ]
-"383
+"393
 [v nokia_write_dorc@n_dato n_dato `uc  1 a 1 1 ]
-"423
+"433
 } 0
-"505
+"515
 [v _nokia_delay nokia_delay `(v  1 e 1 0 ]
 {
 [v nokia_delay@count count `i  1 p 2 0 ]
-"515
+"525
 } 0
-"426
+"436
 [v _nokia_gotoxy nokia_gotoxy `(v  1 e 1 0 ]
 {
 [v nokia_gotoxy@x x `uc  1 a 1 wreg ]
 [v nokia_gotoxy@x x `uc  1 a 1 wreg ]
 [v nokia_gotoxy@y y `uc  1 p 1 0 ]
-"428
+"438
 [v nokia_gotoxy@x x `uc  1 a 1 2 ]
-"434
+"444
 } 0
 "293
 [v _nokia_clean_buffer nokia_clean_buffer `(v  1 e 1 0 ]
@@ -600,16 +627,10 @@ channel_FVR_Buffer2 63
 {
 "98
 } 0
-"71 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
+"70 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 {
-"98
-} 0
-"234
-[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
-{
-[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
-"236
+"95
 } 0
 "116 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
@@ -641,70 +662,32 @@ channel_FVR_Buffer2 63
 {
 "58
 } 0
-"139 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
+"136 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
 {
-"171
-[v TMR0_ISR@sbuf sbuf `[20]uc  1 a 20 16 ]
-"161
-[v TMR0_ISR@convertedValue convertedValue `ui  1 a 2 36 ]
-"231
+"158
+[v TMR0_ISR@sbuf sbuf `[20]uc  1 a 20 25 ]
+"152
+[v TMR0_ISR@convertedValue convertedValue `ui  1 a 2 48 ]
+"170
 } 0
-"319 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
-[v i1_nokia_refresh nokia_refresh `(v  1 e 1 0 ]
-{
-[v i1nokia_refresh@j nokia_refresh `uc  1 a 1 1 ]
-[v i1nokia_refresh@i nokia_refresh `uc  1 a 1 0 ]
-"328
-} 0
-"354
-[v i1_nokia_write_data nokia_write_data `(v  1 e 1 0 ]
-{
-[v i1nokia_write_data@dato dato `uc  1 a 1 wreg ]
-[v i1nokia_write_data@dato dato `uc  1 a 1 wreg ]
-"356
-[v i1nokia_write_data@dato dato `uc  1 a 1 4 ]
-"375
-} 0
-"331
-[v i1_nokia_write_command nokia_write_command `(v  1 e 1 0 ]
-{
-[v i1nokia_write_command@comando comando `uc  1 a 1 wreg ]
-[v i1nokia_write_command@comando comando `uc  1 a 1 wreg ]
-"333
-[v i1nokia_write_command@comando comando `uc  1 a 1 4 ]
-"351
-} 0
-"378
-[v i1_nokia_write_dorc nokia_write_dorc `(v  1 e 1 0 ]
-{
-[v i1nokia_write_dorc@n_dato n_dato `uc  1 a 1 wreg ]
-[v i1nokia_write_dorc@data nokia_write_dorc `uc  1 a 1 3 ]
-[v i1nokia_write_dorc@caa nokia_write_dorc `uc  1 a 1 2 ]
-[v i1nokia_write_dorc@n_dato n_dato `uc  1 a 1 wreg ]
-"383
-[v i1nokia_write_dorc@n_dato n_dato `uc  1 a 1 1 ]
-"423
-} 0
-"476
+"486 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
 [v i1_nokia_printstr nokia_printstr `(v  1 e 1 0 ]
 {
-[v i1nokia_printstr@message message `*.4uc  1 a 1 wreg ]
-[v i1nokia_printstr@message message `*.4uc  1 a 1 wreg ]
-[v i1nokia_printstr@message message `*.4uc  1 a 1 11 ]
-"481
+[v i1nokia_printstr@message message `*.39uc  1 p 2 22 ]
+"491
 } 0
-"445
+"455
 [v i1_nokia_printchar nokia_printchar `(v  1 e 1 0 ]
 {
 [v i1nokia_printchar@c c `uc  1 a 1 wreg ]
-[v i1nokia_printchar@char_row nokia_printchar `uc  1 a 1 8 ]
-[v i1nokia_printchar@char_pos nokia_printchar `uc  1 a 1 7 ]
-[v i1nokia_printchar@char_data nokia_printchar `uc  1 a 1 6 ]
+[v i1nokia_printchar@char_row nokia_printchar `uc  1 a 1 20 ]
+[v i1nokia_printchar@char_pos nokia_printchar `uc  1 a 1 19 ]
+[v i1nokia_printchar@char_data nokia_printchar `uc  1 a 1 18 ]
 [v i1nokia_printchar@c c `uc  1 a 1 wreg ]
-"449
-[v i1nokia_printchar@c c `uc  1 a 1 9 ]
-"473
+"459
+[v i1nokia_printchar@c c `uc  1 a 1 21 ]
+"483
 } 0
 "4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
 [v i1___bmul __bmul `(uc  1 e 1 0 ]
@@ -717,83 +700,286 @@ channel_FVR_Buffer2 63
 [v i1___bmul@multiplier multiplier `uc  1 a 1 3 ]
 "51
 } 0
-"426 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
+"436 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
 [v i1_nokia_gotoxy nokia_gotoxy `(v  1 e 1 0 ]
 {
 [v i1nokia_gotoxy@x x `uc  1 a 1 wreg ]
 [v i1nokia_gotoxy@x x `uc  1 a 1 wreg ]
 [v i1nokia_gotoxy@y y `uc  1 p 1 0 ]
-"428
+"438
 [v i1nokia_gotoxy@x x `uc  1 a 1 2 ]
-"434
+"444
 } 0
 "492 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
 [v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[u S873 . 4 `ul 1 vd 4 0 `d 1 integ 3 0 ]
+"526
+[v sprintf@tmpval tmpval `S873  1 a 4 12 ]
 "528
-[v sprintf@val val `ui  1 a 2 11 ]
-"499
-[v sprintf@c c `c  1 a 1 14 ]
-"506
-[v sprintf@prec prec `c  1 a 1 10 ]
+[v sprintf@val val `ul  1 a 4 4 ]
+"516
+[v sprintf@fval fval `d  1 a 3 19 ]
+"504
+[v sprintf@prec prec `i  1 a 2 22 ]
+"516
+[v sprintf@exp exp `i  1 a 2 16 ]
 "508
-[v sprintf@flag flag `uc  1 a 1 9 ]
+[v sprintf@flag flag `us  1 a 2 10 ]
+"501
+[v sprintf@width width `i  1 a 2 8 ]
+"499
+[v sprintf@c c `c  1 a 1 24 ]
 "494
-[v sprintf@ap ap `[1]*.4v  1 a 1 8 ]
+[v sprintf@ap ap `[1]*.4v  1 a 1 3 ]
 "492
 [v sprintf@sp sp `*.4uc  1 a 1 wreg ]
-[v sprintf@f f `*.25DCuc  1 p 2 0 ]
+[v sprintf@f f `*.25DCuc  1 p 2 57 ]
 "533
-[v sprintf@sp sp `*.4uc  1 a 1 13 ]
+[v sprintf@sp sp `*.4uc  1 a 1 18 ]
 "1541
 } 0
-"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
-[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"425
+[v _scale scale `(d  1 s 3 scale ]
+{
+[v scale@scl scl `c  1 a 1 wreg ]
+[v scale@scl scl `c  1 a 1 wreg ]
+"428
+[v scale@scl scl `c  1 a 1 32 ]
+"441
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 1 ]
+"15
+} 0
+"409 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+{
+[v fround@prec prec `uc  1 a 1 wreg ]
+[v fround@prec prec `uc  1 a 1 wreg ]
+"413
+[v fround@prec prec `uc  1 a 1 37 ]
+"418
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 19 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 23 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 22 ]
+[v ___ftmul@exp exp `uc  1 a 1 18 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 8 ]
+[v ___ftmul@f2 f2 `f  1 p 3 11 ]
+"157
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "11
-[v ___lwmod@counter counter `uc  1 a 1 13 ]
+[v ___awdiv@quotient quotient `i  1 a 2 2 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 1 ]
+[v ___awdiv@counter counter `uc  1 a 1 0 ]
 "6
-[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
-[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+[v ___awdiv@divisor divisor `i  1 p 2 7 ]
+[v ___awdiv@dividend dividend `i  1 p 2 9 ]
+"42
+} 0
+"60 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __tdiv_to_l_@quot quot `ul  1 a 4 0 ]
+"62
+[v __tdiv_to_l_@exp1 exp1 `uc  1 a 1 5 ]
+[v __tdiv_to_l_@cntr cntr `uc  1 a 1 4 ]
+"60
+[v __tdiv_to_l_@f1 f1 `f  1 p 3 0 ]
+[v __tdiv_to_l_@f2 f2 `f  1 p 3 3 ]
+"101
+} 0
+"60 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __div_to_l_@quot quot `ul  1 a 4 0 ]
+"62
+[v __div_to_l_@exp1 exp1 `uc  1 a 1 5 ]
+[v __div_to_l_@cntr cntr `uc  1 a 1 4 ]
+"60
+[v __div_to_l_@f1 f1 `d  1 p 3 0 ]
+[v __div_to_l_@f2 f2 `d  1 p 3 3 ]
+"101
+} 0
+"35 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+{
+"37
+[v ___lltoft@exp exp `uc  1 a 1 13 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 8 ]
+"46
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 9 ]
+"6
+[v ___llmod@divisor divisor `ul  1 p 4 0 ]
+[v ___llmod@dividend dividend `ul  1 p 4 4 ]
 "26
 } 0
-"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
-[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
 {
 "11
-[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
 "12
-[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
 "6
-[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
-[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
 "31
 } 0
-"303 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
+"44 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 33 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 37 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 32 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 24 ]
+"73
+} 0
+"18 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f2 f2 `f  1 p 3 51 ]
+[v ___ftsub@f1 f1 `f  1 p 3 54 ]
+"27
+} 0
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 50 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 49 ]
+[v ___ftadd@sign sign `uc  1 a 1 48 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 38 ]
+[v ___ftadd@f2 f2 `f  1 p 3 41 ]
+"148
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 0 ]
+"20
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"331 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
+[v _nokia_refresh_line nokia_refresh_line `(v  1 e 1 0 ]
+{
+[v nokia_refresh_line@y y `uc  1 a 1 wreg ]
+"332
+[v nokia_refresh_line@x x `uc  1 a 1 17 ]
+"331
+[v nokia_refresh_line@y y `uc  1 a 1 wreg ]
+"333
+[v nokia_refresh_line@y y `uc  1 a 1 16 ]
+"338
+} 0
+"364
+[v i1_nokia_write_data nokia_write_data `(v  1 e 1 0 ]
+{
+[v i1nokia_write_data@dato dato `uc  1 a 1 wreg ]
+[v i1nokia_write_data@dato dato `uc  1 a 1 wreg ]
+"366
+[v i1nokia_write_data@dato dato `uc  1 a 1 4 ]
+"385
+} 0
+"341
+[v i1_nokia_write_command nokia_write_command `(v  1 e 1 0 ]
+{
+[v i1nokia_write_command@comando comando `uc  1 a 1 wreg ]
+[v i1nokia_write_command@comando comando `uc  1 a 1 wreg ]
+"343
+[v i1nokia_write_command@comando comando `uc  1 a 1 4 ]
+"361
+} 0
+"388
+[v i1_nokia_write_dorc nokia_write_dorc `(v  1 e 1 0 ]
+{
+[v i1nokia_write_dorc@n_dato n_dato `uc  1 a 1 wreg ]
+[v i1nokia_write_dorc@data nokia_write_dorc `uc  1 a 1 3 ]
+[v i1nokia_write_dorc@caa nokia_write_dorc `uc  1 a 1 2 ]
+[v i1nokia_write_dorc@n_dato n_dato `uc  1 a 1 wreg ]
+"393
+[v i1nokia_write_dorc@n_dato n_dato `uc  1 a 1 1 ]
+"433
+} 0
+"303
 [v _nokia_clean_line nokia_clean_line `(v  1 e 1 0 ]
 {
 [v nokia_clean_line@y y `uc  1 a 1 wreg ]
 "312
-[v nokia_clean_line@i i `uc  1 a 1 1 ]
+[v nokia_clean_line@i i `uc  1 a 1 17 ]
 "303
 [v nokia_clean_line@y y `uc  1 a 1 wreg ]
 "313
-[v nokia_clean_line@y y `uc  1 a 1 0 ]
+[v nokia_clean_line@y y `uc  1 a 1 16 ]
 "316
 } 0
 "15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
 [v i1___wmul __wmul `(ui  1 e 2 0 ]
 {
-[v i1___wmul@product __wmul `ui  1 a 2 4 ]
-[v i1___wmul@multiplier multiplier `ui  1 p 2 0 ]
-[v i1___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+[v i1___wmul@product __wmul `ui  1 a 2 12 ]
+[v i1___wmul@multiplier multiplier `ui  1 p 2 4 ]
+[v i1___wmul@multiplicand multiplicand `ui  1 p 2 6 ]
 "53
 } 0
-"238 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
-[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
 {
-"241
+"11
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"35
+} 0
+"28 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 8 ]
+"31
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
 } 0
 "113 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/adcc.c
 [v _ADCC_StartConversion ADCC_StartConversion `(v  1 e 1 0 ]

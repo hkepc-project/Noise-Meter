@@ -58,7 +58,13 @@ int state=0;
 
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
     // Use the following macros to:
- 
+    
+    
+    
+    LCD_BL_SetLow();
+                
+                
+                
     char    str_greeting[]="NOISE METER\n";
     nokia_init();   
     nokia_clean_buffer();

@@ -31,6 +31,7 @@ extern "C" {
     
 void nokia_init(void);                                //LCD initialization
 void nokia_refresh(void);                             //Memory map dump into LCD
+void nokia_refresh_line(unsigned char);      // Memeory map dump a line into LCD
 void nokia_write_command(unsigned char);                     //Command write
 void nokia_write_data(unsigned char);                        //Data write
 void nokia_write_dorc(unsigned char);                        //Data or Command write
