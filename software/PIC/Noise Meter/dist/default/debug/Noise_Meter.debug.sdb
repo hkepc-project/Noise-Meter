@@ -1,0 +1,816 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F19156 ]
+[d frameptr 6 ]
+"114 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/adcc.c
+[e E12471 . `uc
+channel_VBAT_div_3 57
+channel_VLCD3_div_4 58
+channel_Vss 59
+channel_Temp_Sensor 60
+channel_DAC1_Output 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+]
+"164 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
+[e E12556 . `uc
+channel_VBAT_div_3 57
+channel_VLCD3_div_4 58
+channel_Vss 59
+channel_Temp_Sensor 60
+channel_DAC1_Output 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+]
+"492 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"54 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\main.c
+[v _main main `(v  1 e 1 0 ]
+"62 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"113
+[v _ADCC_StartConversion ADCC_StartConversion `(v  1 e 1 0 ]
+"125
+[v _ADCC_IsConversionDone ADCC_IsConversionDone `(uc  1 e 1 0 ]
+"131
+[v _ADCC_GetConversionResult ADCC_GetConversionResult `(ui  1 e 2 0 ]
+"57 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/fvr.c
+[v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
+"51 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"90 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"100
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"116
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"84 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"71 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"139
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"234
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"238
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"211 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
+[v _nokia_init nokia_init `(v  1 e 1 0 ]
+"293
+[v _nokia_clean_buffer nokia_clean_buffer `(v  1 e 1 0 ]
+"303
+[v _nokia_clean_line nokia_clean_line `(v  1 e 1 0 ]
+"319
+[v _nokia_refresh nokia_refresh `(v  1 e 1 0 ]
+[v i1_nokia_refresh nokia_refresh `(v  1 e 1 0 ]
+"331
+[v _nokia_write_command nokia_write_command `(v  1 e 1 0 ]
+[v i1_nokia_write_command nokia_write_command `(v  1 e 1 0 ]
+"354
+[v _nokia_write_data nokia_write_data `(v  1 e 1 0 ]
+[v i1_nokia_write_data nokia_write_data `(v  1 e 1 0 ]
+"378
+[v _nokia_write_dorc nokia_write_dorc `(v  1 e 1 0 ]
+[v i1_nokia_write_dorc nokia_write_dorc `(v  1 e 1 0 ]
+"426
+[v _nokia_gotoxy nokia_gotoxy `(v  1 e 1 0 ]
+[v i1_nokia_gotoxy nokia_gotoxy `(v  1 e 1 0 ]
+"445
+[v _nokia_printchar nokia_printchar `(v  1 e 1 0 ]
+[v i1_nokia_printchar nokia_printchar `(v  1 e 1 0 ]
+"476
+[v _nokia_printstr nokia_printstr `(v  1 e 1 0 ]
+[v i1_nokia_printstr nokia_printstr `(v  1 e 1 0 ]
+"505
+[v _nokia_delay nokia_delay `(v  1 e 1 0 ]
+[s S715 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"424 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f19156.h
+[u S720 . 1 `S715 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES720  1 e 1 @11 ]
+"646
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"703
+[v _TRISB TRISB `VEuc  1 e 1 @19 ]
+"765
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+"822
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+"879
+[v _LATB LATB `VEuc  1 e 1 @25 ]
+[s S566 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"896
+[u S575 . 1 `S566 1 . 1 0 ]
+[v _LATBbits LATBbits `VES575  1 e 1 @25 ]
+"941
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+[s S742 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"958
+[u S751 . 1 `S742 1 . 1 0 ]
+[v _LATCbits LATCbits `VES751  1 e 1 @26 ]
+"1032
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @140 ]
+"1160
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @141 ]
+"1295
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @142 ]
+"1423
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @143 ]
+"1558
+[v _ADERRL ADERRL `VEuc  1 e 1 @144 ]
+"1686
+[v _ADERRH ADERRH `VEuc  1 e 1 @145 ]
+"1821
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @146 ]
+"1949
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @147 ]
+"2084
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @148 ]
+"2212
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @149 ]
+"2349
+[v _ADACCL ADACCL `VEuc  1 e 1 @150 ]
+"2477
+[v _ADACCH ADACCH `VEuc  1 e 1 @151 ]
+"2605
+[v _ADACCU ADACCU `VEuc  1 e 1 @152 ]
+"2733
+[v _ADCNT ADCNT `VEuc  1 e 1 @153 ]
+"2861
+[v _ADRPT ADRPT `VEuc  1 e 1 @154 ]
+"2996
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @155 ]
+"3124
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @156 ]
+"3259
+[v _ADRESL ADRESL `VEuc  1 e 1 @157 ]
+"3387
+[v _ADRESH ADRESH `VEuc  1 e 1 @158 ]
+"3507
+[v _ADPCH ADPCH `VEuc  1 e 1 @159 ]
+"3572
+[v _ADACQL ADACQL `VEuc  1 e 1 @268 ]
+"3700
+[v _ADACQH ADACQH `VEuc  1 e 1 @269 ]
+"3792
+[v _ADCAP ADCAP `VEuc  1 e 1 @270 ]
+"3851
+[v _ADPREL ADPREL `VEuc  1 e 1 @271 ]
+"3979
+[v _ADPREH ADPREH `VEuc  1 e 1 @272 ]
+"4071
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @273 ]
+[s S127 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CONT 1 0 :1:6 
+`uc 1 ON 1 0 :1:7 
+]
+"4104
+[s S136 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+[s S145 . 1 `uc 1 DONE 1 0 :1:0 
+]
+[s S147 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+]
+[u S149 . 1 `S127 1 . 1 0 `S136 1 . 1 0 `S145 1 . 1 0 `S147 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES149  1 e 1 @273 ]
+"4169
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @274 ]
+[s S364 . 1 `uc 1 DSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 GPOL 1 0 :1:5 
+`uc 1 IPEN 1 0 :1:6 
+`uc 1 PPOL 1 0 :1:7 
+]
+"4190
+[s S370 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+[u S376 . 1 `S364 1 . 1 0 `S370 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES376  1 e 1 @274 ]
+"4235
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @275 ]
+[s S234 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 ACLR 1 0 :1:3 
+`uc 1 CRS 1 0 :3:4 
+`uc 1 PSIS 1 0 :1:7 
+]
+"4280
+[s S239 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+[s S248 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+]
+[s S252 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CRS0 1 0 :1:4 
+`uc 1 CRS1 1 0 :1:5 
+`uc 1 CRS2 1 0 :1:6 
+]
+[s S260 . 1 `uc 1 MD 1 0 :3:0 
+]
+[s S262 . 1 `uc 1 MD0 1 0 :1:0 
+`uc 1 MD1 1 0 :1:1 
+`uc 1 MD2 1 0 :1:2 
+]
+[u S266 . 1 `S234 1 . 1 0 `S239 1 . 1 0 `S248 1 . 1 0 `S252 1 . 1 0 `S260 1 . 1 0 `S262 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES266  1 e 1 @275 ]
+"4405
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @276 ]
+[s S179 . 1 `uc 1 TMD 1 0 :3:0 
+`uc 1 SOI 1 0 :1:3 
+`uc 1 CALC 1 0 :3:4 
+]
+"4440
+[s S183 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+[s S191 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+[s S195 . 1 `uc 1 TMD0 1 0 :1:0 
+`uc 1 TMD1 1 0 :1:1 
+`uc 1 TMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CALC0 1 0 :1:4 
+`uc 1 CALC1 1 0 :1:5 
+`uc 1 CALC2 1 0 :1:6 
+]
+[u S203 . 1 `S179 1 . 1 0 `S183 1 . 1 0 `S191 1 . 1 0 `S195 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES203  1 e 1 @276 ]
+"4535
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @277 ]
+[s S308 . 1 `uc 1 STAT 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 MATH 1 0 :1:4 
+`uc 1 LTHR 1 0 :1:5 
+`uc 1 UTHR 1 0 :1:6 
+`uc 1 OV 1 0 :1:7 
+]
+"4568
+[s S315 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+[s S324 . 1 `uc 1 ADSTAT 1 0 :3:0 
+]
+[s S326 . 1 `uc 1 STAT0 1 0 :1:0 
+`uc 1 STAT1 1 0 :1:1 
+`uc 1 STAT2 1 0 :1:2 
+]
+[u S330 . 1 `S308 1 . 1 0 `S315 1 . 1 0 `S324 1 . 1 0 `S326 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES330  1 e 1 @277 ]
+"4653
+[v _ADREF ADREF `VEuc  1 e 1 @278 ]
+"4709
+[v _ADACT ADACT `VEuc  1 e 1 @279 ]
+"4801
+[v _ADCLK ADCLK `VEuc  1 e 1 @280 ]
+"11660
+[v _TMR0L TMR0L `VEuc  1 e 1 @1436 ]
+"11798
+[v _TMR0H TMR0H `VEuc  1 e 1 @1437 ]
+"12052
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @1438 ]
+[s S539 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T016BIT 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 T0OE 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+"12072
+[s S545 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+`uc 1 T0OUTPS1 1 0 :1:1 
+`uc 1 T0OUTPS2 1 0 :1:2 
+`uc 1 T0OUTPS3 1 0 :1:3 
+]
+[u S550 . 1 `S539 1 . 1 0 `S545 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES550  1 e 1 @1438 ]
+"12122
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @1439 ]
+[s S477 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"12995
+[u S482 . 1 `S477 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES482  1 e 1 @1804 ]
+[s S464 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"13334
+[u S469 . 1 `S464 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES469  1 e 1 @1814 ]
+"13660
+[v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
+"13706
+[v _PMD1 PMD1 `VEuc  1 e 1 @1943 ]
+"13745
+[v _PMD2 PMD2 `VEuc  1 e 1 @1944 ]
+"13796
+[v _PMD3 PMD3 `VEuc  1 e 1 @1945 ]
+"13834
+[v _PMD4 PMD4 `VEuc  1 e 1 @1946 ]
+"13874
+[v _PMD5 PMD5 `VEuc  1 e 1 @1947 ]
+"14926
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"15066
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"15106
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @2192 ]
+"15163
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"15214
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"15272
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"15353
+[v _FVRCON FVRCON `VEuc  1 e 1 @2316 ]
+[s S667 . 1 `uc 1 ADFVR 1 0 :2:0 
+`uc 1 CDAFVR 1 0 :2:2 
+`uc 1 TSRNG 1 0 :1:4 
+`uc 1 TSEN 1 0 :1:5 
+`uc 1 FVRRDY 1 0 :1:6 
+`uc 1 FVREN 1 0 :1:7 
+]
+"15374
+[s S674 . 1 `uc 1 ADFVR0 1 0 :1:0 
+`uc 1 ADFVR1 1 0 :1:1 
+`uc 1 CDAFVR0 1 0 :1:2 
+`uc 1 CDAFVR1 1 0 :1:3 
+]
+[u S679 . 1 `S667 1 . 1 0 `S674 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES679  1 e 1 @2316 ]
+[s S74 . 1 `uc 1 ADCACTPPS 1 0 :5:0 
+]
+"25590
+[s S76 . 1 `uc 1 ADCACTPPS0 1 0 :1:0 
+`uc 1 ADCACTPPS1 1 0 :1:1 
+`uc 1 ADCACTPPS2 1 0 :1:2 
+`uc 1 ADCACTPPS3 1 0 :1:3 
+`uc 1 ADCACTPPS4 1 0 :1:4 
+]
+[u S82 . 1 `S74 1 . 1 0 `S76 1 . 1 0 ]
+[v _ADCACTPPSbits ADCACTPPSbits `VES82  1 e 1 @7875 ]
+"27139
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"27196
+[v _WPUA WPUA `VEuc  1 e 1 @7993 ]
+"27258
+[v _ODCONA ODCONA `VEuc  1 e 1 @7994 ]
+"27620
+[v _ANSELB ANSELB `VEuc  1 e 1 @8003 ]
+"27682
+[v _WPUB WPUB `VEuc  1 e 1 @8004 ]
+"27744
+[v _ODCONB ODCONB `VEuc  1 e 1 @8005 ]
+"28116
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"28173
+[v _WPUC WPUC `VEuc  1 e 1 @8015 ]
+"28230
+[v _ODCONC ODCONC `VEuc  1 e 1 @8016 ]
+"28572
+[v _WPUE WPUE `VEuc  1 e 1 @8037 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"51 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\main.c
+[v _state state `i  1 e 2 0 ]
+"60 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
+[v _timer0ReloadVal16bit timer0ReloadVal16bit `VEui  1 e 2 0 ]
+"62
+[v _LCD_contrast LCD_contrast `VEuc  1 e 1 0 ]
+"69
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"53 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
+[v _buffer buffer `[84][6]uc  1 s 504 buffer ]
+"54
+[v _idx idx `uc  1 s 1 idx ]
+[v _idy idy `uc  1 s 1 idy ]
+"56
+[v _TABLA1 TABLA1 `DC[240]uc  1 e 240 0 ]
+"105
+[v _TABLA2 TABLA2 `DC[240]uc  1 e 240 0 ]
+"154
+[v _Font10x12 Font10x12 `DC[13][20]uc  1 e 260 0 ]
+"54 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"62
+[v main@str_greeting str_greeting `[13]uc  1 a 13 23 ]
+"97
+[v main@i i `i  1 a 2 36 ]
+"57
+[v main@F12664 F12664 `[13]uc  1 s 13 F12664 ]
+"121
+} 0
+"319 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
+[v _nokia_refresh nokia_refresh `(v  1 e 1 0 ]
+{
+"320
+[v nokia_refresh@j j `uc  1 a 1 15 ]
+[v nokia_refresh@i i `uc  1 a 1 14 ]
+"328
+} 0
+"354
+[v _nokia_write_data nokia_write_data `(v  1 e 1 0 ]
+{
+[v nokia_write_data@dato dato `uc  1 a 1 wreg ]
+[v nokia_write_data@dato dato `uc  1 a 1 wreg ]
+"356
+[v nokia_write_data@dato dato `uc  1 a 1 4 ]
+"375
+} 0
+"476
+[v _nokia_printstr nokia_printstr `(v  1 e 1 0 ]
+{
+[v nokia_printstr@message message `*.4uc  1 a 1 wreg ]
+[v nokia_printstr@message message `*.4uc  1 a 1 wreg ]
+[v nokia_printstr@message message `*.4uc  1 a 1 21 ]
+"481
+} 0
+"445
+[v _nokia_printchar nokia_printchar `(v  1 e 1 0 ]
+{
+[v nokia_printchar@c c `uc  1 a 1 wreg ]
+"447
+[v nokia_printchar@char_row char_row `uc  1 a 1 18 ]
+[v nokia_printchar@char_pos char_pos `uc  1 a 1 17 ]
+[v nokia_printchar@char_data char_data `uc  1 a 1 16 ]
+"445
+[v nokia_printchar@c c `uc  1 a 1 wreg ]
+"449
+[v nokia_printchar@c c `uc  1 a 1 19 ]
+"473
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 2 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0
+"211 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
+[v _nokia_init nokia_init `(v  1 e 1 0 ]
+{
+"267
+} 0
+"331
+[v _nokia_write_command nokia_write_command `(v  1 e 1 0 ]
+{
+[v nokia_write_command@comando comando `uc  1 a 1 wreg ]
+[v nokia_write_command@comando comando `uc  1 a 1 wreg ]
+"333
+[v nokia_write_command@comando comando `uc  1 a 1 4 ]
+"351
+} 0
+"378
+[v _nokia_write_dorc nokia_write_dorc `(v  1 e 1 0 ]
+{
+[v nokia_write_dorc@n_dato n_dato `uc  1 a 1 wreg ]
+"382
+[v nokia_write_dorc@data data `uc  1 a 1 3 ]
+"381
+[v nokia_write_dorc@caa caa `uc  1 a 1 2 ]
+"378
+[v nokia_write_dorc@n_dato n_dato `uc  1 a 1 wreg ]
+"383
+[v nokia_write_dorc@n_dato n_dato `uc  1 a 1 1 ]
+"423
+} 0
+"505
+[v _nokia_delay nokia_delay `(v  1 e 1 0 ]
+{
+[v nokia_delay@count count `i  1 p 2 0 ]
+"515
+} 0
+"426
+[v _nokia_gotoxy nokia_gotoxy `(v  1 e 1 0 ]
+{
+[v nokia_gotoxy@x x `uc  1 a 1 wreg ]
+[v nokia_gotoxy@x x `uc  1 a 1 wreg ]
+[v nokia_gotoxy@y y `uc  1 p 1 0 ]
+"428
+[v nokia_gotoxy@x x `uc  1 a 1 2 ]
+"434
+} 0
+"293
+[v _nokia_clean_buffer nokia_clean_buffer `(v  1 e 1 0 ]
+{
+"294
+[v nokia_clean_buffer@j j `uc  1 a 1 15 ]
+[v nokia_clean_buffer@i i `uc  1 a 1 14 ]
+"300
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"90 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"98
+} 0
+"71 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"98
+} 0
+"234
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"236
+} 0
+"116 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"130
+} 0
+"84 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"129
+} 0
+"100 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"114
+} 0
+"57 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/fvr.c
+[v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
+{
+"61
+} 0
+"62 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+{
+"111
+} 0
+"51 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"58
+} 0
+"139 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"171
+[v TMR0_ISR@sbuf sbuf `[20]uc  1 a 20 16 ]
+"161
+[v TMR0_ISR@convertedValue convertedValue `ui  1 a 2 36 ]
+"231
+} 0
+"319 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
+[v i1_nokia_refresh nokia_refresh `(v  1 e 1 0 ]
+{
+[v i1nokia_refresh@j nokia_refresh `uc  1 a 1 1 ]
+[v i1nokia_refresh@i nokia_refresh `uc  1 a 1 0 ]
+"328
+} 0
+"354
+[v i1_nokia_write_data nokia_write_data `(v  1 e 1 0 ]
+{
+[v i1nokia_write_data@dato dato `uc  1 a 1 wreg ]
+[v i1nokia_write_data@dato dato `uc  1 a 1 wreg ]
+"356
+[v i1nokia_write_data@dato dato `uc  1 a 1 4 ]
+"375
+} 0
+"331
+[v i1_nokia_write_command nokia_write_command `(v  1 e 1 0 ]
+{
+[v i1nokia_write_command@comando comando `uc  1 a 1 wreg ]
+[v i1nokia_write_command@comando comando `uc  1 a 1 wreg ]
+"333
+[v i1nokia_write_command@comando comando `uc  1 a 1 4 ]
+"351
+} 0
+"378
+[v i1_nokia_write_dorc nokia_write_dorc `(v  1 e 1 0 ]
+{
+[v i1nokia_write_dorc@n_dato n_dato `uc  1 a 1 wreg ]
+[v i1nokia_write_dorc@data nokia_write_dorc `uc  1 a 1 3 ]
+[v i1nokia_write_dorc@caa nokia_write_dorc `uc  1 a 1 2 ]
+[v i1nokia_write_dorc@n_dato n_dato `uc  1 a 1 wreg ]
+"383
+[v i1nokia_write_dorc@n_dato n_dato `uc  1 a 1 1 ]
+"423
+} 0
+"476
+[v i1_nokia_printstr nokia_printstr `(v  1 e 1 0 ]
+{
+[v i1nokia_printstr@message message `*.4uc  1 a 1 wreg ]
+[v i1nokia_printstr@message message `*.4uc  1 a 1 wreg ]
+[v i1nokia_printstr@message message `*.4uc  1 a 1 11 ]
+"481
+} 0
+"445
+[v i1_nokia_printchar nokia_printchar `(v  1 e 1 0 ]
+{
+[v i1nokia_printchar@c c `uc  1 a 1 wreg ]
+[v i1nokia_printchar@char_row nokia_printchar `uc  1 a 1 8 ]
+[v i1nokia_printchar@char_pos nokia_printchar `uc  1 a 1 7 ]
+[v i1nokia_printchar@char_data nokia_printchar `uc  1 a 1 6 ]
+[v i1nokia_printchar@c c `uc  1 a 1 wreg ]
+"449
+[v i1nokia_printchar@c c `uc  1 a 1 9 ]
+"473
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v i1___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v i1___bmul@product __bmul `uc  1 a 1 2 ]
+[v i1___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v i1___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v i1___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0
+"426 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
+[v i1_nokia_gotoxy nokia_gotoxy `(v  1 e 1 0 ]
+{
+[v i1nokia_gotoxy@x x `uc  1 a 1 wreg ]
+[v i1nokia_gotoxy@x x `uc  1 a 1 wreg ]
+[v i1nokia_gotoxy@y y `uc  1 p 1 0 ]
+"428
+[v i1nokia_gotoxy@x x `uc  1 a 1 2 ]
+"434
+} 0
+"492 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"528
+[v sprintf@val val `ui  1 a 2 11 ]
+"499
+[v sprintf@c c `c  1 a 1 14 ]
+"506
+[v sprintf@prec prec `c  1 a 1 10 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 9 ]
+"494
+[v sprintf@ap ap `[1]*.4v  1 a 1 8 ]
+"492
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.25DCuc  1 p 2 0 ]
+"533
+[v sprintf@sp sp `*.4uc  1 a 1 13 ]
+"1541
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"31
+} 0
+"303 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\Nokia_5110.c
+[v _nokia_clean_line nokia_clean_line `(v  1 e 1 0 ]
+{
+[v nokia_clean_line@y y `uc  1 a 1 wreg ]
+"312
+[v nokia_clean_line@i i `uc  1 a 1 1 ]
+"303
+[v nokia_clean_line@y y `uc  1 a 1 wreg ]
+"313
+[v nokia_clean_line@y y `uc  1 a 1 0 ]
+"316
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+{
+[v i1___wmul@product __wmul `ui  1 a 2 4 ]
+[v i1___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i1___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"238 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/tmr0.c
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"241
+} 0
+"113 C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/adcc.c
+[v _ADCC_StartConversion ADCC_StartConversion `(v  1 e 1 0 ]
+{
+[v ADCC_StartConversion@channel channel `E12471  1 a 1 wreg ]
+[v ADCC_StartConversion@channel channel `E12471  1 a 1 wreg ]
+"116
+[v ADCC_StartConversion@channel channel `E12471  1 a 1 0 ]
+"123
+} 0
+"125
+[v _ADCC_IsConversionDone ADCC_IsConversionDone `(uc  1 e 1 0 ]
+{
+"129
+} 0
+"131
+[v _ADCC_GetConversionResult ADCC_GetConversionResult `(ui  1 e 2 0 ]
+{
+"135
+} 0
