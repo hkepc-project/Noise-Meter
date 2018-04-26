@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.obj
+$C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.obj
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 14 14 2 2
 config CONFIG 0 8007 8007 5 2
@@ -238,40 +238,40 @@ STRING 200E-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Noise_Meter.production.obj
-16 cinit CODE >8482:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-16 cinit CODE >8485:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-16 cinit CODE >8537:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-17 cinit CODE >8538:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-18 cinit CODE >8539:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-19 cinit CODE >8540:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1A cinit CODE >8541:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1B cinit CODE >8542:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1C cinit CODE >8543:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1D cinit CODE >8544:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1E cinit CODE >8545:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F cinit CODE >8546:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-20 cinit CODE >8547:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-21 cinit CODE >8548:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-24 cinit CODE >8571:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-25 cinit CODE >8572:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-26 cinit CODE >8573:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-27 cinit CODE >8574:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-28 cinit CODE >8575:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-29 cinit CODE >8576:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-2A cinit CODE >8577:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-2B cinit CODE >8578:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-2C cinit CODE >8579:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-2E cinit CODE >8583:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-2F cinit CODE >8587:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-30 cinit CODE >8588:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-31 cinit CODE >8589:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-32 cinit CODE >8593:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-33 cinit CODE >8594:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-34 cinit CODE >8595:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-35 cinit CODE >8601:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-35 cinit CODE >8603:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-36 cinit CODE >8604:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-37 cinit CODE >8605:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
+16 cinit CODE >8482:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+16 cinit CODE >8485:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+16 cinit CODE >8537:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+17 cinit CODE >8538:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+18 cinit CODE >8539:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+19 cinit CODE >8540:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1A cinit CODE >8541:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1B cinit CODE >8542:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1C cinit CODE >8543:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1D cinit CODE >8544:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1E cinit CODE >8545:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F cinit CODE >8546:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+20 cinit CODE >8547:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+21 cinit CODE >8548:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+24 cinit CODE >8571:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+25 cinit CODE >8572:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+26 cinit CODE >8573:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+27 cinit CODE >8574:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+28 cinit CODE >8575:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+29 cinit CODE >8576:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+2A cinit CODE >8577:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+2B cinit CODE >8578:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+2C cinit CODE >8579:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+2E cinit CODE >8583:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+2F cinit CODE >8587:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+30 cinit CODE >8588:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+31 cinit CODE >8589:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+32 cinit CODE >8593:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+33 cinit CODE >8594:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+34 cinit CODE >8595:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+35 cinit CODE >8601:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+35 cinit CODE >8603:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+36 cinit CODE >8604:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+37 cinit CODE >8605:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
 4 intentry CODE >51:C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/interrupt_manager.c
 9 intentry CODE >54:C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/interrupt_manager.c
 D intentry CODE >56:C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\mcc_generated_files/interrupt_manager.c
@@ -1006,34 +1006,34 @@ AE2 text4 CODE >483:C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Nois
 1522 maintext CODE >103:C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\main.c
 1525 maintext CODE >109:C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\main.c
 152A maintext CODE >110:C:\Users\hugoc_000\Dropbox\Noise Meter\git\software\PIC\Noise Meter\main.c
-1F90 clrtext CODE >8554:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F90 clrtext CODE >8555:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F91 clrtext CODE >8556:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F91 clrtext CODE >8557:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F92 clrtext CODE >8558:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F93 clrtext CODE >8559:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F94 clrtext CODE >8560:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F95 clrtext CODE >8561:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F96 clrtext CODE >8562:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F97 clrtext CODE >8563:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F98 clrtext CODE >8564:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F99 clrtext CODE >8565:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F9A clrtext CODE >8567:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F9B clrtext CODE >8566:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F9C inittext CODE >8520:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F9C inittext CODE >8521:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F9D inittext CODE >8522:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F9D inittext CODE >8523:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F9E inittext CODE >8524:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1F9F inittext CODE >8525:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1FA0 inittext CODE >8526:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1FA1 inittext CODE >8527:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1FA2 inittext CODE >8528:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1FA3 inittext CODE >8529:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1FA4 inittext CODE >8530:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1FA5 inittext CODE >8531:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1FA6 inittext CODE >8533:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
-1FA7 inittext CODE >8532:C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.
+1F90 clrtext CODE >8554:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F90 clrtext CODE >8555:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F91 clrtext CODE >8556:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F91 clrtext CODE >8557:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F92 clrtext CODE >8558:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F93 clrtext CODE >8559:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F94 clrtext CODE >8560:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F95 clrtext CODE >8561:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F96 clrtext CODE >8562:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F97 clrtext CODE >8563:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F98 clrtext CODE >8564:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F99 clrtext CODE >8565:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F9A clrtext CODE >8567:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F9B clrtext CODE >8566:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F9C inittext CODE >8520:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F9C inittext CODE >8521:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F9D inittext CODE >8522:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F9D inittext CODE >8523:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F9E inittext CODE >8524:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1F9F inittext CODE >8525:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1FA0 inittext CODE >8526:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1FA1 inittext CODE >8527:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1FA2 inittext CODE >8528:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1FA3 inittext CODE >8529:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1FA4 inittext CODE >8530:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1FA5 inittext CODE >8531:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1FA6 inittext CODE >8533:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
+1FA7 inittext CODE >8532:C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1085,12 +1085,12 @@ _WPUA 1F39 0 ABS 0 - dist/default/production\Noise_Meter.production.obj
 _WPUB 1F44 0 ABS 0 - dist/default/production\Noise_Meter.production.obj
 _WPUC 1F4F 0 ABS 0 - dist/default/production\Noise_Meter.production.obj
 _WPUE 1F65 0 ABS 0 - dist/default/production\Noise_Meter.production.obj
-___sp 0 0 STACK 2 stack C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.obj
+___sp 0 0 STACK 2 stack C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.obj
 _main 29EA 0 CODE 0 maintext dist/default/production\Noise_Meter.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\Noise_Meter.production.obj
 ___ftadd@f1 46 0 BANK0 1 cstackBANK0 dist/default/production\Noise_Meter.production.obj
 ___ftadd@f2 49 0 BANK0 1 cstackBANK0 dist/default/production\Noise_Meter.production.obj
-start 28 0 CODE 0 init C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.obj
+start 28 0 CODE 0 init C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\Noise_Meter.production.obj
 __size_of___awmod 0 0 ABS 0 - dist/default/production\Noise_Meter.production.obj
 __end_of_nokia_printchar 15C6 0 CODE 0 text4 dist/default/production\Noise_Meter.production.obj
@@ -1120,12 +1120,12 @@ ___ftge@ff2 73 0 COMMON 1 cstackCOMMON dist/default/production\Noise_Meter.produ
 __end_of__npowers_ 30EC 0 STRCODE 0 stringtext6 dist/default/production\Noise_Meter.production.obj
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\Noise_Meter.production.obj
 _sprintf$1457 A0 0 BANK1 1 cstackBANK1 dist/default/production\Noise_Meter.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.obj
 __size_of__div_to_l_ 0 0 ABS 0 - dist/default/production\Noise_Meter.production.obj
 ___bmul@multiplicand 120 0 BANK2 1 cstackBANK2 dist/default/production\Noise_Meter.production.obj
 TMR0_ISR@convertedValue D0 0 BANK1 1 cstackBANK1 dist/default/production\Noise_Meter.production.obj
@@ -1274,7 +1274,7 @@ i1___bmul@product 72 0 COMMON 1 cstackCOMMON dist/default/production\Noise_Meter
 _LCD_contrast 66 0 BANK0 1 bssBANK0 dist/default/production\Noise_Meter.production.obj
 i1___wmul@multiplicand 26 0 BANK0 1 cstackBANK0 dist/default/production\Noise_Meter.production.obj
 __end_of_ADCC_Initialize 2706 0 CODE 0 text19 dist/default/production\Noise_Meter.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.obj
+___int_sp 0 0 STACK 2 stack C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.obj
 i1___bmul 3FBA 0 CODE 0 text24 dist/default/production\Noise_Meter.production.obj
 i1___wmul 273C 0 CODE 0 text47 dist/default/production\Noise_Meter.production.obj
 nokia_write_data@dato 124 0 BANK2 1 cstackBANK2 dist/default/production\Noise_Meter.production.obj
@@ -1565,7 +1565,7 @@ nokia_refresh@j 12F 0 BANK2 1 cstackBANK2 dist/default/production\Noise_Meter.pr
 __HnvBANK1 0 0 ABS 0 nvBANK1 -
 __Lintentry 8 0 CODE 0 intentry -
 ___lldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\Noise_Meter.production.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.obj
 __powers_ 3050 0 STRCODE 0 stringtext5 dist/default/production\Noise_Meter.production.obj
 i1_nokia_printchar 15C6 0 CODE 0 text23 dist/default/production\Noise_Meter.production.obj
 __pdataBANK2 146 0 BANK2 1 dataBANK2 dist/default/production\Noise_Meter.production.obj
@@ -1740,8 +1740,8 @@ __end_of_nokia_clean_line 2974 0 CODE 0 text46 dist/default/production\Noise_Met
 __size_of_ADCC_StartConversion 0 0 ABS 0 - dist/default/production\Noise_Meter.production.obj
 __size_of_nokia_clean_line 0 0 ABS 0 - dist/default/production\Noise_Meter.production.obj
 ___lwtoft@c 78 0 COMMON 1 cstackCOMMON dist/default/production\Noise_Meter.production.obj
-stackhi 25F7 0 ABS 0 - C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.obj
-stacklo 20D5 0 ABS 0 - C:\Users\HUGOC_~1\AppData\Local\Temp\sfek.obj
+stackhi 25F7 0 ABS 0 - C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.obj
+stacklo 20D5 0 ABS 0 - C:\Users\HUGOC_~1\AppData\Local\Temp\sdqc.obj
 ?___lltoft 78 0 COMMON 1 cstackCOMMON dist/default/production\Noise_Meter.production.obj
 i1_nokia_write_data 3EF4 0 CODE 0 text43 dist/default/production\Noise_Meter.production.obj
 i1_nokia_write_dorc 2824 0 CODE 0 text45 dist/default/production\Noise_Meter.production.obj

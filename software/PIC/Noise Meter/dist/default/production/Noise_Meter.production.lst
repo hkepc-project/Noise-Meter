@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.45 build -152302408 
-                                                                                               Thu Apr 26 04:11:44 2018
+                                                                                               Fri Apr 27 03:24:51 2018
 
 Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
      1                           	processor	16F19156
@@ -5120,13 +5120,13 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   5106  0070                     ?_TMR0_ISR:	
   5107                           ; 1 bytes @ 0x0
   5108                           
-  5109  0070                     ?_main:	
+  5109  0070                     ?_INTERRUPT_InterruptManager:	
   5110                           ; 1 bytes @ 0x0
   5111                           
-  5112  0070                     ?_nokia_printchar:	
+  5112  0070                     ?_main:	
   5113                           ; 1 bytes @ 0x0
   5114                           
-  5115  0070                     ?_INTERRUPT_InterruptManager:	
+  5115  0070                     ?_nokia_printchar:	
   5116                           ; 1 bytes @ 0x0
   5117                           
   5118  0070                     ?i1_nokia_write_command:	
@@ -5677,11 +5677,11 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   5658  1502  300D               	movlw	13
   5659  1503  0142               	movlb	2	; select bank2
   5660  1504  00B6               	movwf	??_main^(0+256)
-  5661  1505                     u4810:	
+  5661  1505                     u4830:	
   5662  1505  0016               	moviw fsr1++
   5663  1506  001A               	movwi fsr0++
   5664  1507  0BB6               	decfsz	??_main^(0+256),f
-  5665  1508  2D05               	goto	u4810
+  5665  1508  2D05               	goto	u4830
   5666                           
   5667                           ;main.c: 69: nokia_init();
   5668  1509  3197  271C  3194   	fcall	_nokia_init
@@ -5717,7 +5717,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   5698  1522  0142               	movlb	2	; select bank2
   5699  1523  01C4               	clrf	main@i^(0+256)
   5700  1524  01C5               	clrf	(main@i+1)^(0+256)
-  5701  1525                     l3874:	
+  5701  1525                     l3880:	
   5702                           ;main.c: 104: while (1)
   5703                           
   5704                           
@@ -5736,12 +5736,12 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   5717  152D  3083               	movlw	131
   5718  152E  0236               	subwf	??_main^(0+256),w
   5719  152F  1D03               	skipz
-  5720  1530  2D33               	goto	u4825
+  5720  1530  2D33               	goto	u4845
   5721  1531  30E8               	movlw	232
   5722  1532  0244               	subwf	main@i^(0+256),w
-  5723  1533                     u4825:	
+  5723  1533                     u4845:	
   5724  1533  1C03               	skipc
-  5725  1534  2D25               	goto	l3874
+  5725  1534  2D25               	goto	l3880
   5726  1535  2D22               	goto	L1
   5727  1536                     __end_of_main:	
   5728                           
@@ -6646,8 +6646,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   6587  143B  00A2               	movwf	nokia_write_dorc@caa^(0+256)
   6588  143C  0822               	movf	nokia_write_dorc@caa^(0+256),w
   6589  143D  1903               	btfsc	3,2
-  6590  143E  2C54               	goto	l446
-  6591  143F                     l436:	
+  6590  143E  2C54               	goto	l458
+  6591  143F                     l448:	
   6592                           ;Nokia_5110.c: 395: do { LATCbits.LATC3 = 0; } while(0);
   6593                           
   6594  143F  0140               	movlb	0	; select bank0
@@ -6656,21 +6656,21 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   6597                           ;Nokia_5110.c: 399: if ((data & 0x80)==0) {
   6598  1441  0142               	movlb	2	; select bank2
   6599  1442  1BA3               	btfsc	nokia_write_dorc@data^(0+256),7
-  6600  1443  2C47               	goto	l442
+  6600  1443  2C47               	goto	l454
   6601                           
   6602                           ;Nokia_5110.c: 400: do { LATCbits.LATC4 = 0; } while(0);
   6603  1444  0140               	movlb	0	; select bank0
   6604  1445  121A               	bcf	26,4	;volatile
   6605                           
   6606                           ;Nokia_5110.c: 403: }
-  6607  1446  2C49               	goto	l444
-  6608  1447                     l442:	
+  6607  1446  2C49               	goto	l456
+  6608  1447                     l454:	
   6609                           ;Nokia_5110.c: 404: else {
   6610                           ;Nokia_5110.c: 405: do { LATCbits.LATC4 = 1; } while(0);
   6611                           
   6612  1447  0140               	movlb	0	; select bank0
   6613  1448  161A               	bsf	26,4	;volatile
-  6614  1449                     l444:	
+  6614  1449                     l456:	
   6615                           ;Nokia_5110.c: 408: }
   6616                           ;Nokia_5110.c: 411: do { LATCbits.LATC3 = 1; } while(0);
   6617                           
@@ -6686,8 +6686,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   6627  1450  02A2               	subwf	nokia_write_dorc@caa^(0+256),f
   6628  1451  0822               	movf	nokia_write_dorc@caa^(0+256),w
   6629  1452  1D03               	btfss	3,2
-  6630  1453  2C3F               	goto	l436
-  6631  1454                     l446:	
+  6630  1453  2C3F               	goto	l448
+  6631  1454                     l458:	
   6632                           ;Nokia_5110.c: 416: }
   6633                           ;Nokia_5110.c: 417: do { LATCbits.LATC3 = 0; } while(0);
   6634                           
@@ -6801,27 +6801,27 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   6732  1385  3054               	movlw	84
   6733  1386  0222               	subwf	nokia_gotoxy@x^(0+256),w
   6734  1387  1C03               	skipc
-  6735  1388  2B8D               	goto	l451
+  6735  1388  2B8D               	goto	l463
   6736                           
   6737                           ;Nokia_5110.c: 439: x=83;
   6738  1389  3053               	movlw	83
   6739  138A  00A1               	movwf	??_nokia_gotoxy^(0+256)
   6740  138B  0821               	movf	??_nokia_gotoxy^(0+256),w
   6741  138C  00A2               	movwf	nokia_gotoxy@x^(0+256)
-  6742  138D                     l451:	
+  6742  138D                     l463:	
   6743                           
   6744                           ;Nokia_5110.c: 440: if(y>5)
   6745  138D  3006               	movlw	6
   6746  138E  0220               	subwf	nokia_gotoxy@y^(0+256),w
   6747  138F  1C03               	skipc
-  6748  1390  2B95               	goto	l452
+  6748  1390  2B95               	goto	l464
   6749                           
   6750                           ;Nokia_5110.c: 441: y=5;
   6751  1391  3005               	movlw	5
   6752  1392  00A1               	movwf	??_nokia_gotoxy^(0+256)
   6753  1393  0821               	movf	??_nokia_gotoxy^(0+256),w
   6754  1394  00A0               	movwf	nokia_gotoxy@y^(0+256)
-  6755  1395                     l452:	
+  6755  1395                     l464:	
   6756                           
   6757                           ;Nokia_5110.c: 442: idx=x;
   6758  1395  0822               	movf	nokia_gotoxy@x^(0+256),w
@@ -7640,12 +7640,12 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   7521  0009  014E               	movlb	14	; select bank14
   7522  000A  1A96               	btfsc	22,5	;volatile
   7523  000B  1E8C               	btfss	12,5	;volatile
-  7524  000C  280F               	goto	i1l497
+  7524  000C  280F               	goto	i1l329
   7525                           
   7526                           ;interrupt_manager.c: 55: {
   7527                           ;interrupt_manager.c: 56: TMR0_ISR();
   7528  000D  3197  2784         	fcall	_TMR0_ISR
-  7529  000F                     i1l497:	
+  7529  000F                     i1l329:	
   7530  000F  0140               	movlb	0	; select bank0
   7531  0010  0865               	movf	??_INTERRUPT_InterruptManager,w
   7532  0011  00FF               	movwf	127
@@ -8326,27 +8326,27 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   8182  134E  3054               	movlw	84
   8183  134F  0272               	subwf	i1nokia_gotoxy@x,w
   8184  1350  1C03               	skipc
-  8185  1351  2B56               	goto	i1l451
+  8185  1351  2B56               	goto	i1l463
   8186                           
   8187                           ;Nokia_5110.c: 439: x=83;
   8188  1352  3053               	movlw	83
   8189  1353  00F1               	movwf	??i1_nokia_gotoxy
   8190  1354  0871               	movf	??i1_nokia_gotoxy,w
   8191  1355  00F2               	movwf	i1nokia_gotoxy@x
-  8192  1356                     i1l451:	
+  8192  1356                     i1l463:	
   8193                           
   8194                           ;Nokia_5110.c: 440: if(y>5)
   8195  1356  3006               	movlw	6
   8196  1357  0270               	subwf	i1nokia_gotoxy@y,w
   8197  1358  1C03               	skipc
-  8198  1359  2B5E               	goto	i1l452
+  8198  1359  2B5E               	goto	i1l464
   8199                           
   8200                           ;Nokia_5110.c: 441: y=5;
   8201  135A  3005               	movlw	5
   8202  135B  00F1               	movwf	??i1_nokia_gotoxy
   8203  135C  0871               	movf	??i1_nokia_gotoxy,w
   8204  135D  00F0               	movwf	i1nokia_gotoxy@y
-  8205  135E                     i1l452:	
+  8205  135E                     i1l464:	
   8206                           
   8207                           ;Nokia_5110.c: 442: idx=x;
   8208  135E  0872               	movf	i1nokia_gotoxy@x,w
@@ -13796,8 +13796,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
  13544  141A  00F2               	movwf	i1nokia_write_dorc@caa
  13545  141B  0872               	movf	i1nokia_write_dorc@caa,w
  13546  141C  1903               	btfsc	3,2
- 13547  141D  2C2F               	goto	i1l446
- 13548  141E                     i1l436:	
+ 13547  141D  2C2F               	goto	i1l458
+ 13548  141E                     i1l448:	
  13549                           ;Nokia_5110.c: 395: do { LATCbits.LATC3 = 0; } while(0);
  13550                           
  13551  141E  0140               	movlb	0	; select bank0
@@ -13805,19 +13805,19 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
  13553                           
  13554                           ;Nokia_5110.c: 399: if ((data & 0x80)==0) {
  13555  1420  1BF3               	btfsc	i1nokia_write_dorc@data,7
- 13556  1421  2C24               	goto	i1l442
+ 13556  1421  2C24               	goto	i1l454
  13557                           
  13558                           ;Nokia_5110.c: 400: do { LATCbits.LATC4 = 0; } while(0);
  13559  1422  121A               	bcf	26,4	;volatile
  13560                           
  13561                           ;Nokia_5110.c: 403: }
- 13562  1423  2C25               	goto	i1l444
- 13563  1424                     i1l442:	
+ 13562  1423  2C25               	goto	i1l456
+ 13563  1424                     i1l454:	
  13564                           ;Nokia_5110.c: 404: else {
  13565                           ;Nokia_5110.c: 405: do { LATCbits.LATC4 = 1; } while(0);
  13566                           
  13567  1424  161A               	bsf	26,4	;volatile
- 13568  1425                     i1l444:	
+ 13568  1425                     i1l456:	
  13569                           ;Nokia_5110.c: 408: }
  13570                           ;Nokia_5110.c: 411: do { LATCbits.LATC3 = 1; } while(0);
  13571                           
@@ -13832,8 +13832,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
  13580  142B  02F2               	subwf	i1nokia_write_dorc@caa,f
  13581  142C  0872               	movf	i1nokia_write_dorc@caa,w
  13582  142D  1D03               	btfss	3,2
- 13583  142E  2C1E               	goto	i1l436
- 13584  142F                     i1l446:	
+ 13583  142E  2C1E               	goto	i1l448
+ 13584  142F                     i1l458:	
  13585                           ;Nokia_5110.c: 416: }
  13586                           ;Nokia_5110.c: 417: do { LATCbits.LATC3 = 0; } while(0);
  13587                           
@@ -15505,7 +15505,7 @@ SFR63                0      0       0      64        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.45 build -152302408 
-Symbol Table                                                                                   Thu Apr 26 04:11:44 2018
+Symbol Table                                                                                   Fri Apr 27 03:24:51 2018
 
                 _nokia_write_command 1FA8                      ?i1_nokia_gotoxy 0070  
                      ___bmul@product 0122                          __CFG_CP$OFF 0000  
@@ -15513,10 +15513,10 @@ Symbol Table                                                                    
                 ___wmul@multiplicand 0122                     i1___wmul@product 007C  
            __end_of_nokia_clean_line 14BA                         ___ftadd@exp1 0052  
                        ___ftadd@exp2 0051                          __CFG_LVP$ON 0000  
-                       ___ftadd@sign 0050                                  l442 1447  
-                                l451 138D                                  l452 1395  
-                                l444 1449                                  l436 143F  
-                                l446 1454                                  l699 13C3  
+                       ___ftadd@sign 0050                                  l454 1447  
+                                l463 138D                                  l464 1395  
+                                l456 1449                                  l448 143F  
+                                l458 1454                                  l699 13C3  
                                 _idx 0154                                  _idy 0153  
             __size_of_PMD_Initialize 0008             i1nokia_write_dorc@n_dato 0071  
                        ___awmod@sign 0076                         __CFG_BORV$LO 0000  
@@ -15529,7 +15529,7 @@ Symbol Table                                                                    
                                l3740 07FB                                 l3734 07CC  
                                l3584 0A3B                                 l3594 0A48  
                                l3850 1336                                 l2980 13BD  
-                               l2994 12E9                                 l3874 1525  
+                               l3880 1525                                 l2994 12E9  
                                l2998 12EF                                 STR_1 2000  
                                _LATA 0018                                 _LATB 0019  
                                _LATC 001A                   ??i1_nokia_printstr 007E  
@@ -15537,7 +15537,7 @@ Symbol Table                                                                    
                                _PMD0 0796                                 _PMD1 0797  
                                _PMD2 0798                                 _PMD3 0799  
                                _PMD4 079A                                 _PMD5 079B  
-                               u4810 1505                                 u4825 1533  
+                               u4830 1505                                 u4845 1533  
                                u4857 1F46                     nokia_printchar@c 0133  
                                _WPUA 1F39                                 _WPUB 1F44  
                                _WPUC 1F4F                                 _WPUE 1F65  
@@ -15565,12 +15565,12 @@ Symbol Table                                                                    
                     __end_of___lldiv 160F                      __end_of___ftmul 0976  
                     ___awdiv@divisor 0077                      __end_of___llmod 1578  
                     __end_of___ftsub 13F4                      __end_of___fttol 08C2  
-                              i1l442 1424                                i1l602 0583  
-                              i1l451 1356                                i1l444 1425  
-                              i1l436 141E                                i1l604 05BD  
-                              i1l452 135E                                i1l446 142F  
-                              i1l552 0109                                i1l537 0061  
-                              i1l558 022A                                i1l497 000F  
+                              i1l329 000F                                i1l602 0583  
+                              i1l604 05BD                                i1l454 1424  
+                              i1l463 1356                                i1l456 1425  
+                              i1l448 141E                                i1l552 0109  
+                              i1l464 135E                                i1l537 0061  
+                              i1l458 142F                                i1l558 022A  
                               i1l908 0C48                                i1l934 09A7  
                               i1l944 0A20                                i1l865 0DB0  
                               i1l699 13A7                                i1l884 16FD  
